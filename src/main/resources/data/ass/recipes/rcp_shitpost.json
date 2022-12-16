@@ -1,0 +1,19 @@
+{
+  "group": "ass",
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "ass:dung"
+    },
+    {
+      "tag": "minecraft:noise"
+    },
+    {
+      "tag": "minecraft:fences"
+    }
+  ],
+  "result": {
+    "item": "ass:shitpost",
+    "count": 1
+  }
+}

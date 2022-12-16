@@ -1,0 +1,9 @@
+{
+  "group": "ass",
+  "type": "minecraft:stonecutting",
+  "count": 2,
+  "ingredient": {
+    "item": "ass:shit"
+  },
+  "result": "ass:turd"
+}

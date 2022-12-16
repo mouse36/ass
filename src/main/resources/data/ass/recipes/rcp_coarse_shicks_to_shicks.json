@@ -1,0 +1,16 @@
+{
+  "group": "ass",
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "ass:coarse_shicks"
+    },
+    {
+      "item": "minecraft:potion"
+    }
+  ],
+  "result": {
+    "item": "ass:shicks",
+    "count": 1
+  }
+}

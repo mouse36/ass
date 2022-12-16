@@ -1,0 +1,19 @@
+{
+  "group": "ass",
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "ass:dung"
+    },
+    {
+      "item": "minecraft:water_bucket"
+    },
+    {
+      "item": "minecraft:bucket"
+    }
+  ],
+  "result": {
+    "item": "ass:diarrhea_bucket",
+    "count": 1
+  }
+}

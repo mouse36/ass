@@ -1,0 +1,127 @@
+{
+  "_fv": 24,
+  "_type": "gui",
+  "definition": {
+    "type": 0,
+    "width": 176,
+    "height": 166,
+    "inventoryOffsetX": 0,
+    "inventoryOffsetY": 0,
+    "renderBgLayer": false,
+    "doesPauseGame": false,
+    "components": [
+      {
+        "type": "label",
+        "data": {
+          "text": "Funny shit from <ENBT:text:name>",
+          "color": {
+            "value": -1,
+            "falpha": 0.0
+          },
+          "name": "Funny shit from <ENBT:text:name>",
+          "x": 6,
+          "y": 6
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "<ENBT:text:shitpost1>",
+          "color": {
+            "value": -1,
+            "falpha": 0.0
+          },
+          "name": "<ENBT:text:shitpost1>",
+          "x": 8,
+          "y": 34
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "<ENBT:text:shitpost2>",
+          "color": {
+            "value": -1,
+            "falpha": 0.0
+          },
+          "name": "<ENBT:text:shitpost2>",
+          "x": 8,
+          "y": 50
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "<ENBT:text:shitpost3>",
+          "color": {
+            "value": -1,
+            "falpha": 0.0
+          },
+          "name": "<ENBT:text:shitpost3>",
+          "x": 8,
+          "y": 66
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "<ENBT:text:shitpost4>",
+          "color": {
+            "value": -1,
+            "falpha": 0.0
+          },
+          "name": "<ENBT:text:shitpost4>",
+          "x": 8,
+          "y": 82
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "<ENBT:text:shitpost5>",
+          "color": {
+            "value": -1,
+            "falpha": 0.0
+          },
+          "name": "<ENBT:text:shitpost5>",
+          "x": 8,
+          "y": 98
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "<ENBT:text:shipost6>",
+          "color": {
+            "value": -1,
+            "falpha": 0.0
+          },
+          "name": "<ENBT:text:shipost6>",
+          "x": 8,
+          "y": 113
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "AW MAN",
+          "onClick": {
+            "name": "CloseShitpostReadingGUI"
+          },
+          "width": 55,
+          "height": 20,
+          "name": "AW MAN",
+          "x": 258,
+          "y": 163
+        }
+      }
+    ],
+    "gridSettings": {
+      "sx": 18,
+      "sy": 18,
+      "ox": 11,
+      "oy": 15,
+      "snapOnGrid": false
+    }
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "_fv": 24,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Stone cutting",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "recipeRetstackSize": 4,
+    "group": "",
+    "recipeShapeless": false,
+    "stoneCuttingInputStack": {
+      "value": "CUSTOM:SmoothShit"
+    },
+    "stoneCuttingReturnStack": {
+      "value": "CUSTOM:SmoothPoop"
+    },
+    "name": "rcp_smooth_poop_stonecutter",
+    "namespace": "mod"
+  }
+}

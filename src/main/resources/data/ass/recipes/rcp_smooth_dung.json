@@ -1,0 +1,13 @@
+{
+  "group": "ass",
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "ass:smooth_shit"
+    }
+  ],
+  "result": {
+    "item": "ass:smooth_dung",
+    "count": 3
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "ass:blocks/coarse_shicks",
+    "up": "ass:blocks/coarse_shicks",
+    "north": "ass:blocks/coarse_shicks",
+    "east": "ass:blocks/coarse_shicks",
+    "south": "ass:blocks/coarse_shicks",
+    "west": "ass:blocks/coarse_shicks",
+    "particle": "ass:blocks/coarse_shicks"
+  }
+}

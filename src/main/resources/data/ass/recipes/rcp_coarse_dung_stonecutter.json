@@ -1,0 +1,9 @@
+{
+  "group": "ass",
+  "type": "minecraft:stonecutting",
+  "count": 3,
+  "ingredient": {
+    "item": "ass:coarse_shit"
+  },
+  "result": "ass:coarse_dung"
+}

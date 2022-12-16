@@ -1,0 +1,8 @@
+{
+  "parent": "ass:custom/pellety_poop",
+  "textures": {
+    "all": "ass:blocks/shit",
+    "particle": "ass:blocks/shit",
+    "0": "ass:blocks/shit"
+  }
+}

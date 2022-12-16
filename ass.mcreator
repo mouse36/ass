@@ -1,0 +1,1165 @@
+{
+  "id_map": {},
+  "mod_elements": [
+    {
+      "name": "Shit",
+      "type": "block",
+      "sortid": 1,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "shit",
+      "path": "~/mouse"
+    },
+    {
+      "name": "CoarseShit",
+      "type": "block",
+      "sortid": 2,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "coarse_shit",
+      "path": "~/mouse"
+    },
+    {
+      "name": "SmoothShit",
+      "type": "block",
+      "sortid": 3,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "smooth_shit",
+      "path": "~/mouse"
+    },
+    {
+      "name": "RcpCoarseShit",
+      "type": "recipe",
+      "sortid": 4,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "rcp_coarse_shit",
+      "path": "~/mouse"
+    },
+    {
+      "name": "RcpSmoothShit",
+      "type": "recipe",
+      "sortid": 5,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "rcp_smooth_shit",
+      "path": "~/mouse"
+    },
+    {
+      "name": "Shicks",
+      "type": "block",
+      "sortid": 6,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "shicks",
+      "path": "~/mouse"
+    },
+    {
+      "name": "CoarseShicks",
+      "type": "block",
+      "sortid": 7,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "coarse_shicks",
+      "path": "~/mouse"
+    },
+    {
+      "name": "SmoothShicks",
+      "type": "block",
+      "sortid": 8,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "smooth_shicks",
+      "path": "~/mouse"
+    },
+    {
+      "name": "RcpShicks",
+      "type": "recipe",
+      "sortid": 9,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "rcp_shicks",
+      "path": "~/mouse"
+    },
+    {
+      "name": "RcpCoarseShicks",
+      "type": "recipe",
+      "sortid": 10,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "rcp_coarse_shicks",
+      "path": "~/mouse"
+    },
+    {
+      "name": "RcpSmoothShicks",
+      "type": "recipe",
+      "sortid": 11,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "rcp_smooth_shicks",
+      "path": "~/mouse"
+    },
+    {
+      "name": "RcpShicksStonecutter",
+      "type": "recipe",
+      "sortid": 12,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "rcp_shicks_stonecutter",
+      "path": "~/mouse"
+    },
+    {
+      "name": "RcpCoarseShicksStonecutter",
+      "type": "recipe",
+      "sortid": 13,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "rcp_coarse_shicks_stonecutter",
+      "path": "~/mouse"
+    },
+    {
+      "name": "RcpSmoothShicksStonecutter",
+      "type": "recipe",
+      "sortid": 14,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "rcp_smooth_shicks_stonecutter",
+      "path": "~/mouse"
+    },
+    {
+      "name": "Turd",
+      "type": "block",
+      "sortid": 15,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "turd",
+      "path": "~/mouse"
+    },
+    {
+      "name": "CoarseTurd",
+      "type": "block",
+      "sortid": 16,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "coarse_turd",
+      "path": "~/mouse"
+    },
+    {
+      "name": "SmoothTurd",
+      "type": "block",
+      "sortid": 17,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "smooth_turd",
+      "path": "~/mouse"
+    },
+    {
+      "name": "RcpTurd",
+      "type": "recipe",
+      "sortid": 18,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "rcp_turd",
+      "path": "~/mouse"
+    },
+    {
+      "name": "RcpCoarseTurd",
+      "type": "recipe",
+      "sortid": 19,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "rcp_coarse_turd",
+      "path": "~/mouse"
+    },
+    {
+      "name": "RcpSmoothTurd",
+      "type": "recipe",
+      "sortid": 20,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "rcp_smooth_turd",
+      "path": "~/mouse"
+    },
+    {
+      "name": "RcpTurdStonecutter",
+      "type": "recipe",
+      "sortid": 21,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "rcp_turd_stonecutter",
+      "path": "~/mouse"
+    },
+    {
+      "name": "RcpCoarseTurdStonecutter",
+      "type": "recipe",
+      "sortid": 22,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "rcp_coarse_turd_stonecutter",
+      "path": "~/mouse"
+    },
+    {
+      "name": "RcpSmoothTurdStonecutter",
+      "type": "recipe",
+      "sortid": 23,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "rcp_smooth_turd_stonecutter",
+      "path": "~/mouse"
+    },
+    {
+      "name": "Poop",
+      "type": "block",
+      "sortid": 24,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "poop",
+      "path": "~/mouse"
+    },
+    {
+      "name": "CoarsePoop",
+      "type": "block",
+      "sortid": 25,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "coarse_poop",
+      "path": "~/mouse"
+    },
+    {
+      "name": "SmoothPoop",
+      "type": "block",
+      "sortid": 26,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "smooth_poop",
+      "path": "~/mouse"
+    },
+    {
+      "name": "RcpPoop",
+      "type": "recipe",
+      "sortid": 27,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "rcp_poop",
+      "path": "~/mouse"
+    },
+    {
+      "name": "RcpCoarsePoop",
+      "type": "recipe",
+      "sortid": 28,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "rcp_coarse_poop",
+      "path": "~/mouse"
+    },
+    {
+      "name": "RcpSmoothPoop",
+      "type": "recipe",
+      "sortid": 29,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "rcp_smooth_poop",
+      "path": "~/mouse"
+    },
+    {
+      "name": "RcpPoopStonecutter",
+      "type": "recipe",
+      "sortid": 30,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "rcp_poop_stonecutter",
+      "path": "~/mouse"
+    },
+    {
+      "name": "RcpCoarsePoopStonecutter",
+      "type": "recipe",
+      "sortid": 31,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "rcp_coarse_poop_stonecutter",
+      "path": "~/mouse"
+    },
+    {
+      "name": "RcpSmoothPoopStonecutter",
+      "type": "recipe",
+      "sortid": 32,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "rcp_smooth_poop_stonecutter",
+      "path": "~/mouse"
+    },
+    {
+      "name": "RcpShitBoneMeal",
+      "type": "recipe",
+      "sortid": 33,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "rcp_shit_bone_meal",
+      "path": "~/mouse"
+    },
+    {
+      "name": "RcpTurdToShit",
+      "type": "recipe",
+      "sortid": 34,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "rcp_turd_to_shit",
+      "path": "~/mouse"
+    },
+    {
+      "name": "RcpCoarseTurdToShit",
+      "type": "recipe",
+      "sortid": 35,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "rcp_coarse_turd_to_shit",
+      "path": "~/mouse"
+    },
+    {
+      "name": "RcpSmoothTurdToShit",
+      "type": "recipe",
+      "sortid": 36,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "rcp_smooth_turd_to_shit",
+      "path": "~/mouse"
+    },
+    {
+      "name": "RcpPoopToShit",
+      "type": "recipe",
+      "sortid": 37,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "rcp_poop_to_shit",
+      "path": "~/mouse"
+    },
+    {
+      "name": "RcpCoarsePoopToShit",
+      "type": "recipe",
+      "sortid": 38,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "rcp_coarse_poop_to_shit",
+      "path": "~/mouse"
+    },
+    {
+      "name": "RcpSmoothPoopToShit",
+      "type": "recipe",
+      "sortid": 39,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "rcp_smooth_poop_to_shit",
+      "path": "~/mouse"
+    },
+    {
+      "name": "RcpShicksToShit",
+      "type": "recipe",
+      "sortid": 40,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "rcp_shicks_to_shit",
+      "path": "~/mouse"
+    },
+    {
+      "name": "RcpCoarseShicksToShit",
+      "type": "recipe",
+      "sortid": 41,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "rcp_coarse_shicks_to_shit",
+      "path": "~/mouse"
+    },
+    {
+      "name": "RcpSmoothShicksToShit",
+      "type": "recipe",
+      "sortid": 42,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "rcp_smooth_shicks_to_shit",
+      "path": "~/mouse"
+    },
+    {
+      "name": "Dither",
+      "type": "block",
+      "sortid": 43,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "dither",
+      "path": "~/mouse"
+    },
+    {
+      "name": "Either",
+      "type": "block",
+      "sortid": 44,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "either",
+      "path": "~/mouse"
+    },
+    {
+      "name": "Dung",
+      "type": "rangeditem",
+      "sortid": 45,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "dung",
+      "path": "~/mouse"
+    },
+    {
+      "name": "CoarseDung",
+      "type": "rangeditem",
+      "sortid": 46,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "coarse_dung",
+      "path": "~/mouse"
+    },
+    {
+      "name": "SmoothDung",
+      "type": "rangeditem",
+      "sortid": 47,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "smooth_dung",
+      "path": "~/mouse"
+    },
+    {
+      "name": "RcpDung",
+      "type": "recipe",
+      "sortid": 48,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "rcp_dung",
+      "path": "~/mouse"
+    },
+    {
+      "name": "RcpCoarseDung",
+      "type": "recipe",
+      "sortid": 49,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "rcp_coarse_dung",
+      "path": "~/mouse"
+    },
+    {
+      "name": "RcpSmoothDung",
+      "type": "recipe",
+      "sortid": 50,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "rcp_smooth_dung",
+      "path": "~/mouse"
+    },
+    {
+      "name": "RcpDungStonecutter",
+      "type": "recipe",
+      "sortid": 51,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "rcp_dung_stonecutter",
+      "path": "~/mouse"
+    },
+    {
+      "name": "RcpCoarseDungStonecutter",
+      "type": "recipe",
+      "sortid": 52,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "rcp_coarse_dung_stonecutter",
+      "path": "~/mouse"
+    },
+    {
+      "name": "RcpSmoothDungStonecutter",
+      "type": "recipe",
+      "sortid": 53,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "rcp_smooth_dung_stonecutter",
+      "path": "~/mouse"
+    },
+    {
+      "name": "RcpDungToShit",
+      "type": "recipe",
+      "sortid": 51,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "rcp_dung_to_shit",
+      "path": "~/mouse"
+    },
+    {
+      "name": "RcpCoarseDungToShit",
+      "type": "recipe",
+      "sortid": 54,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "rcp_coarse_dung_to_shit",
+      "path": "~/mouse"
+    },
+    {
+      "name": "RcpSmoothDungToShit",
+      "type": "recipe",
+      "sortid": 55,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "rcp_smooth_dung_to_shit",
+      "path": "~/mouse"
+    },
+    {
+      "name": "Diarrhea",
+      "type": "fluid",
+      "sortid": 56,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "diarrhea",
+      "metadata": {
+        "gb": false
+      },
+      "path": "~/mouse"
+    },
+    {
+      "name": "RcpDiarrheaBucket",
+      "type": "recipe",
+      "sortid": 57,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "rcp_diarrhea_bucket",
+      "path": "~/mouse"
+    },
+    {
+      "name": "DiarrheaBucket",
+      "type": "item",
+      "sortid": 58,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "diarrhea_bucket",
+      "path": "~/mouse"
+    },
+    {
+      "name": "DiarrheaBucketDumping",
+      "type": "procedure",
+      "sortid": 59,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "diarrhea_bucket_dumping",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "direction",
+            "type": "direction"
+          },
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/mouse"
+    },
+    {
+      "name": "DiarrheaBucketGetting",
+      "type": "procedure",
+      "sortid": 60,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "diarrhea_bucket_getting",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/mouse"
+    },
+    {
+      "name": "CoarsePoopFuel",
+      "type": "fuel",
+      "sortid": 61,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "coarse_poop_fuel",
+      "path": "~/mouse"
+    },
+    {
+      "name": "CoarseDungFuel",
+      "type": "fuel",
+      "sortid": 62,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "coarse_dung_fuel",
+      "path": "~/mouse"
+    },
+    {
+      "name": "CoarseTurdFuel",
+      "type": "fuel",
+      "sortid": 63,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "coarse_turd_fuel",
+      "path": "~/mouse"
+    },
+    {
+      "name": "CoarseShitFuel",
+      "type": "fuel",
+      "sortid": 64,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "coarse_shit_fuel",
+      "path": "~/mouse"
+    },
+    {
+      "name": "CoarseShicksFuel",
+      "type": "fuel",
+      "sortid": 65,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "coarse_shicks_fuel",
+      "path": "~/mouse"
+    },
+    {
+      "name": "RcpCoarseShitToShit",
+      "type": "recipe",
+      "sortid": 66,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "rcp_coarse_shit_to_shit",
+      "path": "~/mouse"
+    },
+    {
+      "name": "RcpSmoothShitToShit",
+      "type": "recipe",
+      "sortid": 67,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "rcp_smooth_shit_to_shit",
+      "path": "~/mouse"
+    },
+    {
+      "name": "RcpCoarseShicksToShicks",
+      "type": "recipe",
+      "sortid": 68,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "rcp_coarse_shicks_to_shicks",
+      "path": "~/mouse"
+    },
+    {
+      "name": "RcpSmoothShicksToShicksFurnace",
+      "type": "recipe",
+      "sortid": 69,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "rcp_smooth_shicks_to_shicks_furnace",
+      "path": "~/mouse"
+    },
+    {
+      "name": "RcpCoarseTurdToTurd",
+      "type": "recipe",
+      "sortid": 70,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "rcp_coarse_turd_to_turd",
+      "path": "~/mouse"
+    },
+    {
+      "name": "RcpSmoothTurdToTurdFurnace",
+      "type": "recipe",
+      "sortid": 71,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "rcp_smooth_turd_to_turd_furnace",
+      "path": "~/mouse"
+    },
+    {
+      "name": "RcpCoarsePoopToPoop",
+      "type": "recipe",
+      "sortid": 72,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "rcp_coarse_poop_to_poop",
+      "path": "~/mouse"
+    },
+    {
+      "name": "RcpSmoothPoopToPoopFurnace",
+      "type": "recipe",
+      "sortid": 73,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "rcp_smooth_poop_to_poop_furnace",
+      "path": "~/mouse"
+    },
+    {
+      "name": "RcpCoarseDungToDung",
+      "type": "recipe",
+      "sortid": 74,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "rcp_coarse_dung_to_dung",
+      "path": "~/mouse"
+    },
+    {
+      "name": "RcpSmoothDungToDungFurnace",
+      "type": "recipe",
+      "sortid": 75,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "rcp_smooth_dung_to_dung_furnace",
+      "path": "~/mouse"
+    },
+    {
+      "name": "RcpDiarrheaToDungFurnace",
+      "type": "recipe",
+      "sortid": 76,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "rcp_diarrhea_to_dung_furnace",
+      "path": "~/mouse"
+    },
+    {
+      "name": "RcpCoarseShitToTerracottaFurnace",
+      "type": "recipe",
+      "sortid": 77,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "rcp_coarse_shit_to_terracotta_furnace",
+      "path": "~/mouse"
+    },
+    {
+      "name": "RcpCoarseShicksToBricksFurnace",
+      "type": "recipe",
+      "sortid": 78,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "rcp_coarse_shicks_to_bricks_furnace",
+      "path": "~/mouse"
+    },
+    {
+      "name": "DungOverlay",
+      "type": "overlay",
+      "sortid": 79,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "dung_overlay",
+      "path": "~/mouse"
+    },
+    {
+      "name": "DungHitPlayer",
+      "type": "procedure",
+      "sortid": 80,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "dung_hit_player",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/mouse"
+    },
+    {
+      "name": "DungOverlayCondition",
+      "type": "procedure",
+      "sortid": 81,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "dung_overlay_condition",
+      "metadata": {
+        "return_type": "logic",
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/mouse"
+    },
+    {
+      "name": "RcpShitpost",
+      "type": "recipe",
+      "sortid": 83,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "rcp_shitpost",
+      "path": "~/mouse"
+    },
+    {
+      "name": "NoiseTag",
+      "type": "tag",
+      "sortid": 84,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "noise_tag"
+    },
+    {
+      "name": "WrittenShitpost",
+      "type": "rangeditem",
+      "sortid": 87,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "written_shitpost",
+      "path": "~/mouse"
+    },
+    {
+      "name": "Shitpost",
+      "type": "item",
+      "sortid": 88,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "shitpost",
+      "path": "~/mouse"
+    },
+    {
+      "name": "RcpShitToDirt",
+      "type": "recipe",
+      "sortid": 89,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "rcp_shit_to_dirt",
+      "path": "~/mouse"
+    },
+    {
+      "name": "ShitpostReadingGUI",
+      "type": "gui",
+      "sortid": 90,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "shitpost_reading_gui",
+      "path": "~/mouse"
+    },
+    {
+      "name": "ShitpostHitPlayer",
+      "type": "procedure",
+      "sortid": 92,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "shitpost_hit_player",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/mouse"
+    },
+    {
+      "name": "CloseShitpostReadingGUI",
+      "type": "procedure",
+      "sortid": 93,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "close_shitpost_reading_gui",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/mouse"
+    },
+    {
+      "name": "CloseShitpostWritingGUI",
+      "type": "procedure",
+      "sortid": 94,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "close_shitpost_writing_gui",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "guistate",
+            "type": "map"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/mouse"
+    },
+    {
+      "name": "ThrowShitpost",
+      "type": "procedure",
+      "sortid": 95,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "throw_shitpost",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          }
+        ]
+      },
+      "path": "~/mouse"
+    },
+    {
+      "name": "OpenShitpostWritingGUI",
+      "type": "procedure",
+      "sortid": 96,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "open_shitpost_writing_gui",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/mouse"
+    },
+    {
+      "name": "ShitpostWritingGUI",
+      "type": "gui",
+      "sortid": 97,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "shitpost_writing_gui",
+      "path": "~/mouse"
+    }
+  ],
+  "variable_elements": [],
+  "sound_elements": [],
+  "language_map": {
+    "en_us": {
+      "block.ass.coarse_turd": "Coarse Turd",
+      "block.ass.diarrhea": "Diarrhea",
+      "block.ass.dither": "Dither",
+      "fluid.ass.diarrhea": "Diarrhea",
+      "block.ass.smooth_poop": "Smooth Poop",
+      "item.ass.dung": "Dung",
+      "item.ass.smooth_dung": "Smooth Dung",
+      "block.ass.smooth_shit": "Smooth Shit",
+      "block.ass.shicks": "Shit",
+      "item.ass.shitpost": "Shitpost",
+      "block.ass.coarse_poop": "Coarse Poop",
+      "item.ass.diarrhea_bucket": "Diarrhea Bucket",
+      "block.ass.poop": "Poop",
+      "block.ass.shit": "Shit",
+      "item.ass.coarse_dung": "Coarse Dung",
+      "block.ass.coarse_shit": "Coarse Shit",
+      "block.ass.either": "Either",
+      "item.ass.written_shitpost": "Written Shitpost",
+      "block.ass.smooth_shicks": "Smooth Shit",
+      "block.ass.smooth_turd": "Smooth Turd",
+      "block.ass.coarse_shicks": "Coarse Shit",
+      "block.ass.turd": "Turd"
+    }
+  },
+  "foldersRoot": {
+    "name": "~",
+    "children": [
+      {
+        "name": "mouse",
+        "children": []
+      }
+    ]
+  },
+  "workspaceSettings": {
+    "modid": "ass",
+    "modName": "ass",
+    "version": "1.0.0",
+    "description": "stands for anarchy shitpost system",
+    "author": "MCreator, mouse, synth",
+    "websiteURL": "https://mcreator.net",
+    "license": "Academic Free License v3.0",
+    "disableForgeVersionCheck": true,
+    "serverSideOnly": false,
+    "requiredMods": [],
+    "dependencies": [],
+    "dependants": [],
+    "mcreatorDependencies": [],
+    "currentGenerator": "forge-1.16.5",
+    "credits": "Created using mod maker MCreator - https://mcreator.net/about",
+    "modElementsPackage": "net.mcreator.ass",
+    "lockBaseModFiles": false
+  },
+  "mcreatorVersion": 202100236710
+}

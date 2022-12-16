@@ -1,0 +1,22 @@
+{
+  "group": "ass",
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "ass:coarse_pellety_poop"
+    },
+    {
+      "item": "ass:coarse_pellety_poop"
+    },
+    {
+      "item": "ass:coarse_pellety_poop"
+    },
+    {
+      "item": "ass:coarse_pellety_poop"
+    }
+  ],
+  "result": {
+    "item": "ass:coarse_shit",
+    "count": 1
+  }
+}

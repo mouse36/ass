@@ -1,0 +1,26 @@
+{
+  "group": "ass",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " 1 ",
+    "345"
+  ],
+  "key": {
+    "1": {
+      "item": "ass:smooth_shit"
+    },
+    "3": {
+      "item": "ass:smooth_shit"
+    },
+    "4": {
+      "item": "ass:smooth_shit"
+    },
+    "5": {
+      "item": "ass:smooth_shit"
+    }
+  },
+  "result": {
+    "item": "ass:smooth_turd",
+    "count": 2
+  }
+}

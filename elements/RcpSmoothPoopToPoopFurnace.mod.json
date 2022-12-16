@@ -1,0 +1,20 @@
+{
+  "_fv": 24,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Smelting",
+    "xpReward": 1.0,
+    "cookingTime": 200,
+    "recipeRetstackSize": 1,
+    "group": "",
+    "recipeShapeless": false,
+    "smeltingInputStack": {
+      "value": "CUSTOM:SmoothPoop"
+    },
+    "smeltingReturnStack": {
+      "value": "CUSTOM:Poop"
+    },
+    "name": "rcp_smooth_poop_to_poop_furnace",
+    "namespace": "mod"
+  }
+}

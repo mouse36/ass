@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "ass:blocks/smooth_shit",
+    "up": "ass:blocks/smooth_shit",
+    "north": "ass:blocks/smooth_shit",
+    "east": "ass:blocks/smooth_shit",
+    "south": "ass:blocks/smooth_shit",
+    "west": "ass:blocks/smooth_shit",
+    "particle": "ass:blocks/smooth_shit"
+  }
+}

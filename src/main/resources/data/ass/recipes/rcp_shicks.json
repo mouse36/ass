@@ -1,0 +1,26 @@
+{
+  "group": "ass",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "01",
+    "23"
+  ],
+  "key": {
+    "0": {
+      "item": "ass:shit"
+    },
+    "1": {
+      "item": "ass:shit"
+    },
+    "2": {
+      "item": "ass:shit"
+    },
+    "3": {
+      "item": "ass:shit"
+    }
+  },
+  "result": {
+    "item": "ass:shicks",
+    "count": 4
+  }
+}

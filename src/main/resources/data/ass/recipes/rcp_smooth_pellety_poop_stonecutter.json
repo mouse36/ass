@@ -1,0 +1,9 @@
+{
+  "group": "ass",
+  "type": "minecraft:stonecutting",
+  "count": 4,
+  "ingredient": {
+    "item": "ass:smooth_shit"
+  },
+  "result": "ass:smooth_pellety_poop"
+}

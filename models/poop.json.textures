@@ -1,0 +1,22 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "0": "shit"
+      },
+      "name": "default"
+    },
+    "coarse": {
+      "map": {
+        "0": "coarse_shit"
+      },
+      "name": "coarse"
+    },
+    "smooth": {
+      "map": {
+        "0": "smooth_shit"
+      },
+      "name": "smooth"
+    }
+  }
+}

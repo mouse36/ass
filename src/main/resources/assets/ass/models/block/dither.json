@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "ass:blocks/dither",
+    "up": "ass:blocks/dither",
+    "north": "ass:blocks/dither",
+    "east": "ass:blocks/dither",
+    "south": "ass:blocks/dither",
+    "west": "ass:blocks/dither",
+    "particle": "ass:blocks/dither"
+  }
+}

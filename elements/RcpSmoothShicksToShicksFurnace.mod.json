@@ -1,0 +1,20 @@
+{
+  "_fv": 24,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Smelting",
+    "xpReward": 1.0,
+    "cookingTime": 200,
+    "recipeRetstackSize": 1,
+    "group": "",
+    "recipeShapeless": false,
+    "smeltingInputStack": {
+      "value": "CUSTOM:SmoothShicks"
+    },
+    "smeltingReturnStack": {
+      "value": "CUSTOM:Shicks"
+    },
+    "name": "rcp_smooth_shicks_to_shicks_furnace",
+    "namespace": "mod"
+  }
+}
