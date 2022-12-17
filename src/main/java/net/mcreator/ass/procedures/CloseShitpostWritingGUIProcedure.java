@@ -1,18 +1,22 @@
 package net.mcreator.ass.procedures;
 
+import net.minecraftforge.items.ItemHandlerHelper;
 import net.minecraftforge.fml.server.ServerLifecycleHooks;
 
 import net.minecraft.world.IWorld;
 import net.minecraft.util.text.StringTextComponent;
 import net.minecraft.util.text.ChatType;
 import net.minecraft.util.Util;
+import net.minecraft.util.Hand;
 import net.minecraft.server.MinecraftServer;
 import net.minecraft.item.ItemStack;
+import net.minecraft.entity.player.ServerPlayerEntity;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.Entity;
 import net.minecraft.client.gui.widget.TextFieldWidget;
 
+import net.mcreator.ass.item.WrittenShitpostItem;
 import net.mcreator.ass.item.ShitpostItem;
 import net.mcreator.ass.AssMod;
 
@@ -40,6 +44,21 @@ public class CloseShitpostWritingGUIProcedure {
 		HashMap guistate = (HashMap) dependencies.get("guistate");
 		IWorld world = (IWorld) dependencies.get("world");
 		if ((((entity instanceof LivingEntity) ? ((LivingEntity) entity).getHeldItemMainhand() : ItemStack.EMPTY).getItem() == ShitpostItem.block)) {
+			if ((((((entity instanceof LivingEntity) ? ((LivingEntity) entity).getHeldItemMainhand() : ItemStack.EMPTY)).getCount()) > 1)) {
+				if (entity instanceof PlayerEntity) {
+					ItemStack _setstack = new ItemStack(ShitpostItem.block);
+					_setstack.setCount((int) ((((entity instanceof LivingEntity) ? ((LivingEntity) entity).getHeldItemMainhand() : ItemStack.EMPTY))
+							.getCount()));
+					ItemHandlerHelper.giveItemToPlayer(((PlayerEntity) entity), _setstack);
+				}
+			}
+			if (entity instanceof LivingEntity) {
+				ItemStack _setstack = new ItemStack(WrittenShitpostItem.block);
+				_setstack.setCount((int) 1);
+				((LivingEntity) entity).setHeldItem(Hand.MAIN_HAND, _setstack);
+				if (entity instanceof ServerPlayerEntity)
+					((ServerPlayerEntity) entity).inventory.markDirty();
+			}
 			((entity instanceof LivingEntity) ? ((LivingEntity) entity).getHeldItemMainhand() : ItemStack.EMPTY).getOrCreateTag().putString("owner",
 					(entity.getDisplayName().getString()));
 			((entity instanceof LivingEntity) ? ((LivingEntity) entity).getHeldItemMainhand() : ItemStack.EMPTY).getOrCreateTag()
@@ -92,19 +111,25 @@ public class CloseShitpostWritingGUIProcedure {
 							return "";
 						}
 					}.getText()));
-			((entity instanceof LivingEntity) ? ((LivingEntity) entity).getHeldItemMainhand() : ItemStack.EMPTY).getOrCreateTag()
-					.putString("shitpost6", (new Object() {
-						public String getText() {
-							TextFieldWidget _tf = (TextFieldWidget) guistate.get("text:text6");
-							if (_tf != null) {
-								return _tf.getText();
-							}
-							return "";
-						}
-					}.getText()));
 		} else {
 			if ((((entity instanceof LivingEntity) ? ((LivingEntity) entity).getHeldItemOffhand() : ItemStack.EMPTY)
 					.getItem() == ShitpostItem.block)) {
+				if ((((((entity instanceof LivingEntity) ? ((LivingEntity) entity).getHeldItemOffhand() : ItemStack.EMPTY)).getCount()) > 1)) {
+					if (entity instanceof PlayerEntity) {
+						ItemStack _setstack = new ItemStack(ShitpostItem.block);
+						_setstack
+								.setCount((int) ((((entity instanceof LivingEntity) ? ((LivingEntity) entity).getHeldItemOffhand() : ItemStack.EMPTY))
+										.getCount()));
+						ItemHandlerHelper.giveItemToPlayer(((PlayerEntity) entity), _setstack);
+					}
+				}
+				if (entity instanceof LivingEntity) {
+					ItemStack _setstack = new ItemStack(WrittenShitpostItem.block);
+					_setstack.setCount((int) 1);
+					((LivingEntity) entity).setHeldItem(Hand.OFF_HAND, _setstack);
+					if (entity instanceof ServerPlayerEntity)
+						((ServerPlayerEntity) entity).inventory.markDirty();
+				}
 				((entity instanceof LivingEntity) ? ((LivingEntity) entity).getHeldItemOffhand() : ItemStack.EMPTY).getOrCreateTag()
 						.putString("owner", (entity.getDisplayName().getString()));
 				((entity instanceof LivingEntity) ? ((LivingEntity) entity).getHeldItemOffhand() : ItemStack.EMPTY).getOrCreateTag()
@@ -151,16 +176,6 @@ public class CloseShitpostWritingGUIProcedure {
 						.putString("shitpost5", (new Object() {
 							public String getText() {
 								TextFieldWidget _tf = (TextFieldWidget) guistate.get("text:text5");
-								if (_tf != null) {
-									return _tf.getText();
-								}
-								return "";
-							}
-						}.getText()));
-				((entity instanceof LivingEntity) ? ((LivingEntity) entity).getHeldItemOffhand() : ItemStack.EMPTY).getOrCreateTag()
-						.putString("shitpost6", (new Object() {
-							public String getText() {
-								TextFieldWidget _tf = (TextFieldWidget) guistate.get("text:text6");
 								if (_tf != null) {
 									return _tf.getText();
 								}

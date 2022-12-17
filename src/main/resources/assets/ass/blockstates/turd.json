@@ -1,7 +1,19 @@
 {
   "variants": {
-    "": {
+    "facing=north": {
       "model": "ass:block/turd"
+    },
+    "facing=east": {
+      "model": "ass:block/turd",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "ass:block/turd",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "ass:block/turd",
+      "y": 270
     }
   }
 }

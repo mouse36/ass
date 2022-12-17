@@ -1,0 +1,26 @@
+{
+  "display": {
+    "icon": {
+      "item": "ass:dung"
+    },
+    "title": {
+      "translate": "advancements.adv_throw_dung.title"
+    },
+    "description": {
+      "translate": "advancements.adv_throw_dung.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "adv_throw_dung": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "rewards": {
+    "experience": 5
+  },
+  "parent": "ass:adv_shit"
+}

@@ -32,10 +32,14 @@
         "subtract": false
       }
     ],
-    "name": "Coarse Shit",
-    "specialInfo": [],
-    "hardness": 1.2,
-    "resistance": 1.2,
+    "name": "Coarse Shicks",
+    "specialInfo": [
+      "A building block that",
+      "goes harder than",
+      "its wetter counterpart."
+    ],
+    "hardness": 0.6,
+    "resistance": 0.6,
     "hasGravity": false,
     "isWaterloggable": false,
     "creativeTab": {
@@ -96,7 +100,7 @@
     },
     "luminance": 0,
     "unbreakable": false,
-    "breakHarvestLevel": 1,
+    "breakHarvestLevel": 0,
     "spawnParticles": false,
     "particleToSpawn": {
       "value": "EXPLOSION_NORMAL"

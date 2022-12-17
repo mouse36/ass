@@ -12,6 +12,6 @@ public class CoarseTurdFuelFuel {
 	@SubscribeEvent
 	public static void furnaceFuelBurnTimeEvent(FurnaceFuelBurnTimeEvent event) {
 		if (event.getItemStack().getItem() == CoarseDungItem.block)
-			event.setBurnTime(600);
+			event.setBurnTime(500);
 	}
 }

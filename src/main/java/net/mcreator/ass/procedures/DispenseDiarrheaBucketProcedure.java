@@ -5,10 +5,8 @@ import net.minecraftforge.items.CapabilityItemHandler;
 
 import net.minecraft.world.IWorld;
 import net.minecraft.util.math.BlockPos;
-import net.minecraft.util.ResourceLocation;
 import net.minecraft.util.Direction;
 import net.minecraft.tileentity.TileEntity;
-import net.minecraft.tags.BlockTags;
 import net.minecraft.item.Items;
 import net.minecraft.item.ItemStack;
 
@@ -80,14 +78,12 @@ public class DispenseDiarrheaBucketProcedure {
 					}
 				}
 			}
+			if ((world.isAirBlock(new BlockPos((int) (x + (direction.getXOffset())), (int) (y + (direction.getYOffset())),
+					(int) (z + (direction.getZOffset())))))) {
+				world.setBlockState(new BlockPos((int) (x + (direction.getXOffset())), (int) (y + (direction.getYOffset())),
+						(int) (z + (direction.getZOffset()))), DiarrheaBlock.block.getDefaultState(), 3);
+			}
 			index = (double) (index + 1);
-		}
-		if ((BlockTags.getCollection().getTagByID(new ResourceLocation(("minecraft:air").toLowerCase(java.util.Locale.ENGLISH)))
-				.contains((world.getBlockState(new BlockPos((int) (x + (direction.getXOffset())), (int) (y + (direction.getYOffset())),
-						(int) (z + (direction.getZOffset()))))).getBlock()))) {
-			world.setBlockState(
-					new BlockPos((int) (x + (direction.getXOffset())), (int) (y + (direction.getYOffset())), (int) (z + (direction.getZOffset()))),
-					DiarrheaBlock.block.getDefaultState(), 3);
 		}
 	}
 }

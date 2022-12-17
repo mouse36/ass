@@ -1,43 +1,40 @@
 {
   "_fv": 24,
-  "_type": "rangeditem",
+  "_type": "item",
   "definition": {
     "renderType": 0,
-    "texture": "dung",
+    "texture": "coarse_dung",
     "customModelName": "Normal",
     "name": "Written Shitpost",
-    "specialInfo": [
-      "Written",
-      "now get ready for shitten."
-    ],
+    "rarity": "COMMON",
     "creativeTab": {
-      "value": "COMBAT"
+      "value": "MISC"
     },
     "stackSize": 1,
-    "ammoItem": {
+    "enchantability": 0,
+    "useDuration": 0,
+    "toolType": 1.0,
+    "damageCount": 0,
+    "recipeRemainder": {
       "value": ""
     },
-    "shootConstantly": true,
-    "usageCount": 0,
-    "actionSound": {
-      "value": "entity.arrow.shoot"
-    },
-    "hasGlow": false,
-    "animation": "none",
+    "destroyAnyBlock": false,
+    "immuneToFire": false,
+    "stayInGridWhenCrafting": false,
+    "damageOnCrafting": false,
     "enableMeleeDamage": false,
     "damageVsEntity": 0.0,
-    "bulletPower": 0.6,
-    "bulletDamage": 1.0,
-    "bulletKnockback": 6,
-    "bulletParticles": false,
-    "bulletIgnitesFire": false,
-    "bulletItemTexture": {
-      "value": "CUSTOM:Dung"
-    },
-    "bulletModel": "Default",
-    "customBulletModelTexture": "",
-    "onBulletHitsPlayer": {
+    "specialInfo": [
+      "Written, now get ready",
+      "for shitten."
+    ],
+    "hasGlow": false,
+    "guiBoundTo": "<NONE>",
+    "inventorySize": 9,
+    "inventoryStackSize": 64,
+    "onRightClickedInAir": {
       "name": "ShitpostHitPlayer"
-    }
+    },
+    "hasDispenseBehavior": false
   }
 }

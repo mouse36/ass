@@ -22,6 +22,7 @@ import net.minecraft.entity.player.PlayerInventory;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.client.gui.ScreenManager;
 
+import net.mcreator.ass.procedures.CloseShitpostWritingGUIProcedure;
 import net.mcreator.ass.AssModElements;
 
 import java.util.function.Supplier;
@@ -174,6 +175,15 @@ public class ShitpostWritingGUIGui extends AssModElements.ModElement {
 		// security measure to prevent arbitrary chunk generation
 		if (!world.isBlockLoaded(new BlockPos(x, y, z)))
 			return;
+		if (buttonID == 0) {
+			{
+				Map<String, Object> $_dependencies = new HashMap<>();
+				$_dependencies.put("entity", entity);
+				$_dependencies.put("guistate", guistate);
+				$_dependencies.put("world", world);
+				CloseShitpostWritingGUIProcedure.executeProcedure($_dependencies);
+			}
+		}
 	}
 
 	private static void handleSlotAction(PlayerEntity entity, int slotID, int changeType, int meta, int x, int y, int z) {

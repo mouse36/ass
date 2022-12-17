@@ -28,5 +28,15 @@
         "stream": false
       }
     ]
+  },
+  "rare_shard_shit": {
+    "category": "neutral",
+    "subtitle": "subtitles.rare_shard_shit",
+    "sounds": [
+      {
+        "name": "ass:rare_shard_shit",
+        "stream": false
+      }
+    ]
   }
 }

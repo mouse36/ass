@@ -10,6 +10,8 @@ import net.minecraftforge.api.distmarker.OnlyIn;
 import net.minecraftforge.api.distmarker.Dist;
 
 import net.minecraft.world.World;
+import net.minecraft.util.text.StringTextComponent;
+import net.minecraft.util.text.ITextComponent;
 import net.minecraft.util.math.MathHelper;
 import net.minecraft.util.SoundCategory;
 import net.minecraft.util.ResourceLocation;
@@ -29,13 +31,16 @@ import net.minecraft.entity.IRendersAsItem;
 import net.minecraft.entity.EntityType;
 import net.minecraft.entity.EntityClassification;
 import net.minecraft.entity.Entity;
+import net.minecraft.client.util.ITooltipFlag;
 
+import net.mcreator.ass.procedures.ThrowDungProcedure;
 import net.mcreator.ass.procedures.DungHitPlayerProcedure;
 import net.mcreator.ass.entity.renderer.SmoothDungRenderer;
 import net.mcreator.ass.AssModElements;
 
 import java.util.Random;
 import java.util.Map;
+import java.util.List;
 import java.util.HashMap;
 
 @AssModElements.ModElement.Tag
@@ -68,6 +73,13 @@ public class SmoothDungItem extends AssModElements.ModElement {
 		}
 
 		@Override
+		public void addInformation(ItemStack itemstack, World world, List<ITextComponent> list, ITooltipFlag flag) {
+			super.addInformation(itemstack, world, list, flag);
+			list.add(new StringTextComponent("Good for the thrower's hands,"));
+			list.add(new StringTextComponent("bad for the receiver's face."));
+		}
+
+		@Override
 		public UseAction getUseAction(ItemStack itemstack) {
 			return UseAction.NONE;
 		}
@@ -86,9 +98,14 @@ public class SmoothDungItem extends AssModElements.ModElement {
 				double y = entity.getPosY();
 				double z = entity.getPosZ();
 				if (true) {
-					ArrowCustomEntity entityarrow = shoot(world, entity, random, 0.8f, 0, 6);
+					ArrowCustomEntity entityarrow = shoot(world, entity, random, 0.8f, 0, 0);
 					itemstack.damageItem(1, entity, e -> e.sendBreakAnimation(entity.getActiveHand()));
 					entityarrow.pickupStatus = AbstractArrowEntity.PickupStatus.DISALLOWED;
+					{
+						Map<String, Object> $_dependencies = new HashMap<>();
+						$_dependencies.put("itemstack", itemstack);
+						ThrowDungProcedure.executeProcedure($_dependencies);
+					}
 					entity.stopActiveHand();
 				}
 			}
@@ -141,6 +158,10 @@ public class SmoothDungItem extends AssModElements.ModElement {
 			{
 				Map<String, Object> $_dependencies = new HashMap<>();
 				$_dependencies.put("entity", entity);
+				$_dependencies.put("x", x);
+				$_dependencies.put("y", y);
+				$_dependencies.put("z", z);
+				$_dependencies.put("world", world);
 				DungHitPlayerProcedure.executeProcedure($_dependencies);
 			}
 		}
@@ -190,7 +211,7 @@ public class SmoothDungItem extends AssModElements.ModElement {
 		entityarrow.shoot(d1, d0 - entityarrow.getPosY() + (double) MathHelper.sqrt(d1 * d1 + d3 * d3) * 0.2F, d3, 0.8f * 2, 12.0F);
 		entityarrow.setSilent(true);
 		entityarrow.setDamage(0);
-		entityarrow.setKnockbackStrength(6);
+		entityarrow.setKnockbackStrength(0);
 		entityarrow.setIsCritical(false);
 		entity.world.addEntity(entityarrow);
 		double x = entity.getPosX();

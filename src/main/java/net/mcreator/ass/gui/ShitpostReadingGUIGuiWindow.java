@@ -68,13 +68,12 @@ public class ShitpostReadingGUIGuiWindow extends ContainerScreen<ShitpostReading
 
 	@Override
 	protected void drawGuiContainerForegroundLayer(MatrixStack ms, int mouseX, int mouseY) {
-		this.font.drawString(ms, "Funny shit from " + (entity.getPersistentData().getString("name")) + "", -119, -31, -1);
+		this.font.drawString(ms, "Funny shit from " + (entity.getPersistentData().getString("shitpost_owner")) + "", -119, -31, -1);
 		this.font.drawString(ms, "" + (entity.getPersistentData().getString("shitpost1")) + "", -117, -3, -1);
 		this.font.drawString(ms, "" + (entity.getPersistentData().getString("shitpost2")) + "", -117, 13, -1);
 		this.font.drawString(ms, "" + (entity.getPersistentData().getString("shitpost3")) + "", -117, 29, -1);
 		this.font.drawString(ms, "" + (entity.getPersistentData().getString("shitpost4")) + "", -117, 45, -1);
 		this.font.drawString(ms, "" + (entity.getPersistentData().getString("shitpost5")) + "", -117, 61, -1);
-		this.font.drawString(ms, "" + (entity.getPersistentData().getString("shipost6")) + "", -117, 76, -1);
 	}
 
 	@Override
@@ -87,7 +86,7 @@ public class ShitpostReadingGUIGuiWindow extends ContainerScreen<ShitpostReading
 	public void init(Minecraft minecraft, int width, int height) {
 		super.init(minecraft, width, height);
 		minecraft.keyboardListener.enableRepeatEvents(true);
-		this.addButton(new Button(this.guiLeft + 132, this.guiTop + 126, 55, 20, new StringTextComponent("AW MAN"), e -> {
+		this.addButton(new Button(this.guiLeft + -74, this.guiTop + 104, 55, 20, new StringTextComponent("AW MAN"), e -> {
 			if (true) {
 				AssMod.PACKET_HANDLER.sendToServer(new ShitpostReadingGUIGui.ButtonPressedMessage(0, x, y, z));
 				ShitpostReadingGUIGui.handleButtonAction(entity, 0, x, y, z);

@@ -1,0 +1,26 @@
+{
+  "display": {
+    "icon": {
+      "item": "ass:coarse_dung"
+    },
+    "title": {
+      "translate": "advancements.adv_hit_by_coarse_dung.title"
+    },
+    "description": {
+      "translate": "advancements.adv_hit_by_coarse_dung.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "adv_hit_by_coarse_dung": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "rewards": {
+    "experience": 5
+  },
+  "parent": "ass:adv_shit"
+}

@@ -4,6 +4,8 @@ import net.minecraft.world.IWorld;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.ResourceLocation;
 import net.minecraft.tags.BlockTags;
+import net.minecraft.state.Property;
+import net.minecraft.block.BlockState;
 
 import net.mcreator.ass.block.TurdBlock;
 import net.mcreator.ass.block.SmoothTurdBlock;
@@ -62,40 +64,196 @@ public class ShitWettingProcedure {
 										.getTagByID(new ResourceLocation(("ass:dilutes_shit").toLowerCase(java.util.Locale.ENGLISH)))
 										.contains((world.getBlockState(new BlockPos((int) x, (int) y, (int) (z - 1)))).getBlock())))))) {
 			if (((world.getBlockState(new BlockPos((int) x, (int) y, (int) z))).getBlock() == ShitBlock.block)) {
-				world.setBlockState(new BlockPos((int) x, (int) y, (int) z), SmoothShitBlock.block.getDefaultState(), 3);
+				{
+					BlockPos _bp = new BlockPos((int) x, (int) y, (int) z);
+					BlockState _bs = SmoothShitBlock.block.getDefaultState();
+					BlockState _bso = world.getBlockState(_bp);
+					for (Map.Entry<Property<?>, Comparable<?>> entry : _bso.getValues().entrySet()) {
+						Property _property = _bs.getBlock().getStateContainer().getProperty(entry.getKey().getName());
+						if (_property != null && _bs.get(_property) != null)
+							try {
+								_bs = _bs.with(_property, (Comparable) entry.getValue());
+							} catch (Exception e) {
+							}
+					}
+					world.setBlockState(_bp, _bs, 3);
+				}
 			}
 			if (((world.getBlockState(new BlockPos((int) x, (int) y, (int) z))).getBlock() == CoarseShitBlock.block)) {
-				world.setBlockState(new BlockPos((int) x, (int) y, (int) z), ShitBlock.block.getDefaultState(), 3);
+				{
+					BlockPos _bp = new BlockPos((int) x, (int) y, (int) z);
+					BlockState _bs = ShitBlock.block.getDefaultState();
+					BlockState _bso = world.getBlockState(_bp);
+					for (Map.Entry<Property<?>, Comparable<?>> entry : _bso.getValues().entrySet()) {
+						Property _property = _bs.getBlock().getStateContainer().getProperty(entry.getKey().getName());
+						if (_property != null && _bs.get(_property) != null)
+							try {
+								_bs = _bs.with(_property, (Comparable) entry.getValue());
+							} catch (Exception e) {
+							}
+					}
+					world.setBlockState(_bp, _bs, 3);
+				}
 			}
 			if (((world.getBlockState(new BlockPos((int) x, (int) y, (int) z))).getBlock() == SmoothShitBlock.block)) {
-				world.setBlockState(new BlockPos((int) x, (int) y, (int) z), DiarrheaBlock.block.getDefaultState(), 3);
+				{
+					BlockPos _bp = new BlockPos((int) x, (int) y, (int) z);
+					BlockState _bs = DiarrheaBlock.block.getDefaultState();
+					BlockState _bso = world.getBlockState(_bp);
+					for (Map.Entry<Property<?>, Comparable<?>> entry : _bso.getValues().entrySet()) {
+						Property _property = _bs.getBlock().getStateContainer().getProperty(entry.getKey().getName());
+						if (_property != null && _bs.get(_property) != null)
+							try {
+								_bs = _bs.with(_property, (Comparable) entry.getValue());
+							} catch (Exception e) {
+							}
+					}
+					world.setBlockState(_bp, _bs, 3);
+				}
 			}
 			if (((world.getBlockState(new BlockPos((int) x, (int) y, (int) z))).getBlock() == ShicksBlock.block)) {
-				world.setBlockState(new BlockPos((int) x, (int) y, (int) z), SmoothShicksBlock.block.getDefaultState(), 3);
+				{
+					BlockPos _bp = new BlockPos((int) x, (int) y, (int) z);
+					BlockState _bs = SmoothShicksBlock.block.getDefaultState();
+					BlockState _bso = world.getBlockState(_bp);
+					for (Map.Entry<Property<?>, Comparable<?>> entry : _bso.getValues().entrySet()) {
+						Property _property = _bs.getBlock().getStateContainer().getProperty(entry.getKey().getName());
+						if (_property != null && _bs.get(_property) != null)
+							try {
+								_bs = _bs.with(_property, (Comparable) entry.getValue());
+							} catch (Exception e) {
+							}
+					}
+					world.setBlockState(_bp, _bs, 3);
+				}
 			}
 			if (((world.getBlockState(new BlockPos((int) x, (int) y, (int) z))).getBlock() == CoarseShicksBlock.block)) {
-				world.setBlockState(new BlockPos((int) x, (int) y, (int) z), ShicksBlock.block.getDefaultState(), 3);
+				{
+					BlockPos _bp = new BlockPos((int) x, (int) y, (int) z);
+					BlockState _bs = ShicksBlock.block.getDefaultState();
+					BlockState _bso = world.getBlockState(_bp);
+					for (Map.Entry<Property<?>, Comparable<?>> entry : _bso.getValues().entrySet()) {
+						Property _property = _bs.getBlock().getStateContainer().getProperty(entry.getKey().getName());
+						if (_property != null && _bs.get(_property) != null)
+							try {
+								_bs = _bs.with(_property, (Comparable) entry.getValue());
+							} catch (Exception e) {
+							}
+					}
+					world.setBlockState(_bp, _bs, 3);
+				}
 			}
 			if (((world.getBlockState(new BlockPos((int) x, (int) y, (int) z))).getBlock() == SmoothShicksBlock.block)) {
-				world.setBlockState(new BlockPos((int) x, (int) y, (int) z), DiarrheaBlock.block.getDefaultState(), 3);
+				{
+					BlockPos _bp = new BlockPos((int) x, (int) y, (int) z);
+					BlockState _bs = DiarrheaBlock.block.getDefaultState();
+					BlockState _bso = world.getBlockState(_bp);
+					for (Map.Entry<Property<?>, Comparable<?>> entry : _bso.getValues().entrySet()) {
+						Property _property = _bs.getBlock().getStateContainer().getProperty(entry.getKey().getName());
+						if (_property != null && _bs.get(_property) != null)
+							try {
+								_bs = _bs.with(_property, (Comparable) entry.getValue());
+							} catch (Exception e) {
+							}
+					}
+					world.setBlockState(_bp, _bs, 3);
+				}
 			}
 			if (((world.getBlockState(new BlockPos((int) x, (int) y, (int) z))).getBlock() == TurdBlock.block)) {
-				world.setBlockState(new BlockPos((int) x, (int) y, (int) z), SmoothTurdBlock.block.getDefaultState(), 3);
+				{
+					BlockPos _bp = new BlockPos((int) x, (int) y, (int) z);
+					BlockState _bs = SmoothTurdBlock.block.getDefaultState();
+					BlockState _bso = world.getBlockState(_bp);
+					for (Map.Entry<Property<?>, Comparable<?>> entry : _bso.getValues().entrySet()) {
+						Property _property = _bs.getBlock().getStateContainer().getProperty(entry.getKey().getName());
+						if (_property != null && _bs.get(_property) != null)
+							try {
+								_bs = _bs.with(_property, (Comparable) entry.getValue());
+							} catch (Exception e) {
+							}
+					}
+					world.setBlockState(_bp, _bs, 3);
+				}
 			}
 			if (((world.getBlockState(new BlockPos((int) x, (int) y, (int) z))).getBlock() == CoarseTurdBlock.block)) {
-				world.setBlockState(new BlockPos((int) x, (int) y, (int) z), TurdBlock.block.getDefaultState(), 3);
+				{
+					BlockPos _bp = new BlockPos((int) x, (int) y, (int) z);
+					BlockState _bs = TurdBlock.block.getDefaultState();
+					BlockState _bso = world.getBlockState(_bp);
+					for (Map.Entry<Property<?>, Comparable<?>> entry : _bso.getValues().entrySet()) {
+						Property _property = _bs.getBlock().getStateContainer().getProperty(entry.getKey().getName());
+						if (_property != null && _bs.get(_property) != null)
+							try {
+								_bs = _bs.with(_property, (Comparable) entry.getValue());
+							} catch (Exception e) {
+							}
+					}
+					world.setBlockState(_bp, _bs, 3);
+				}
 			}
 			if (((world.getBlockState(new BlockPos((int) x, (int) y, (int) z))).getBlock() == SmoothTurdBlock.block)) {
-				world.setBlockState(new BlockPos((int) x, (int) y, (int) z), DiarrheaBlock.block.getDefaultState(), 3);
+				{
+					BlockPos _bp = new BlockPos((int) x, (int) y, (int) z);
+					BlockState _bs = DiarrheaBlock.block.getDefaultState();
+					BlockState _bso = world.getBlockState(_bp);
+					for (Map.Entry<Property<?>, Comparable<?>> entry : _bso.getValues().entrySet()) {
+						Property _property = _bs.getBlock().getStateContainer().getProperty(entry.getKey().getName());
+						if (_property != null && _bs.get(_property) != null)
+							try {
+								_bs = _bs.with(_property, (Comparable) entry.getValue());
+							} catch (Exception e) {
+							}
+					}
+					world.setBlockState(_bp, _bs, 3);
+				}
 			}
 			if (((world.getBlockState(new BlockPos((int) x, (int) y, (int) z))).getBlock() == PoopBlock.block)) {
-				world.setBlockState(new BlockPos((int) x, (int) y, (int) z), SmoothPoopBlock.block.getDefaultState(), 3);
+				{
+					BlockPos _bp = new BlockPos((int) x, (int) y, (int) z);
+					BlockState _bs = SmoothPoopBlock.block.getDefaultState();
+					BlockState _bso = world.getBlockState(_bp);
+					for (Map.Entry<Property<?>, Comparable<?>> entry : _bso.getValues().entrySet()) {
+						Property _property = _bs.getBlock().getStateContainer().getProperty(entry.getKey().getName());
+						if (_property != null && _bs.get(_property) != null)
+							try {
+								_bs = _bs.with(_property, (Comparable) entry.getValue());
+							} catch (Exception e) {
+							}
+					}
+					world.setBlockState(_bp, _bs, 3);
+				}
 			}
 			if (((world.getBlockState(new BlockPos((int) x, (int) y, (int) z))).getBlock() == CoarsePoopBlock.block)) {
-				world.setBlockState(new BlockPos((int) x, (int) y, (int) z), PoopBlock.block.getDefaultState(), 3);
+				{
+					BlockPos _bp = new BlockPos((int) x, (int) y, (int) z);
+					BlockState _bs = PoopBlock.block.getDefaultState();
+					BlockState _bso = world.getBlockState(_bp);
+					for (Map.Entry<Property<?>, Comparable<?>> entry : _bso.getValues().entrySet()) {
+						Property _property = _bs.getBlock().getStateContainer().getProperty(entry.getKey().getName());
+						if (_property != null && _bs.get(_property) != null)
+							try {
+								_bs = _bs.with(_property, (Comparable) entry.getValue());
+							} catch (Exception e) {
+							}
+					}
+					world.setBlockState(_bp, _bs, 3);
+				}
 			}
 			if (((world.getBlockState(new BlockPos((int) x, (int) y, (int) z))).getBlock() == SmoothPoopBlock.block)) {
-				world.setBlockState(new BlockPos((int) x, (int) y, (int) z), DiarrheaBlock.block.getDefaultState(), 3);
+				{
+					BlockPos _bp = new BlockPos((int) x, (int) y, (int) z);
+					BlockState _bs = DiarrheaBlock.block.getDefaultState();
+					BlockState _bso = world.getBlockState(_bp);
+					for (Map.Entry<Property<?>, Comparable<?>> entry : _bso.getValues().entrySet()) {
+						Property _property = _bs.getBlock().getStateContainer().getProperty(entry.getKey().getName());
+						if (_property != null && _bs.get(_property) != null)
+							try {
+								_bs = _bs.with(_property, (Comparable) entry.getValue());
+							} catch (Exception e) {
+							}
+					}
+					world.setBlockState(_bp, _bs, 3);
+				}
 			}
 		}
 	}

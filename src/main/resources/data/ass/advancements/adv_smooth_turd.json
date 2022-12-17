@@ -1,0 +1,37 @@
+{
+  "display": {
+    "icon": {
+      "item": "ass:smooth_turd"
+    },
+    "title": {
+      "translate": "advancements.adv_smooth_turd.title"
+    },
+    "description": {
+      "translate": "advancements.adv_smooth_turd.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "adv_smooth_turd": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "ass:smooth_poop",
+            "count": {
+              "min": 1,
+              "max": 64
+            }
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "experience": 25
+  },
+  "parent": "ass:adv_shit"
+}

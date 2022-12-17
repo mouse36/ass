@@ -39,7 +39,7 @@ public class ShartShardItem extends AssModElements.ModElement {
 	}
 	public static class ItemCustom extends Item {
 		public ItemCustom() {
-			super(new Item.Properties().group(ItemGroup.MATERIALS).maxStackSize(44).isImmuneToFire().rarity(Rarity.COMMON));
+			super(new Item.Properties().group(ItemGroup.MATERIALS).maxStackSize(46).isImmuneToFire().rarity(Rarity.COMMON));
 			setRegistryName("shart_shard");
 		}
 

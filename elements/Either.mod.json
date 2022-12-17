@@ -33,7 +33,9 @@
       }
     ],
     "name": "Either",
-    "specialInfo": [],
+    "specialInfo": [
+      "2748"
+    ],
     "hardness": 4.0,
     "resistance": 4.0,
     "hasGravity": true,

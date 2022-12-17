@@ -13,12 +13,12 @@
       {
         "type": "label",
         "data": {
-          "text": "Funny shit from <ENBT:text:name>",
+          "text": "Funny shit from <ENBT:text:shitpost_owner>",
           "color": {
             "value": -1,
             "falpha": 0.0
           },
-          "name": "Funny shit from <ENBT:text:name>",
+          "name": "Funny shit from <ENBT:text:shitpost_owner>",
           "x": 6,
           "y": 6
         }
@@ -89,19 +89,6 @@
         }
       },
       {
-        "type": "label",
-        "data": {
-          "text": "<ENBT:text:shipost6>",
-          "color": {
-            "value": -1,
-            "falpha": 0.0
-          },
-          "name": "<ENBT:text:shipost6>",
-          "x": 8,
-          "y": 113
-        }
-      },
-      {
         "type": "button",
         "data": {
           "text": "AW MAN",
@@ -111,8 +98,8 @@
           "width": 55,
           "height": 20,
           "name": "AW MAN",
-          "x": 258,
-          "y": 163
+          "x": 51,
+          "y": 141
         }
       }
     ],

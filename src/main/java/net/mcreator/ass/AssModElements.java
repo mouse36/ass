@@ -46,6 +46,7 @@ public class AssModElements {
 	public static Map<ResourceLocation, net.minecraft.util.SoundEvent> sounds = new HashMap<>();
 	public AssModElements() {
 		sounds.put(new ResourceLocation("ass", "shit"), new net.minecraft.util.SoundEvent(new ResourceLocation("ass", "shit")));
+		sounds.put(new ResourceLocation("ass", "rare_shard_shit"), new net.minecraft.util.SoundEvent(new ResourceLocation("ass", "rare_shard_shit")));
 		try {
 			ModFileScanData modFileInfo = ModList.get().getModFileById("ass").getFile().getScanResult();
 			Set<ModFileScanData.AnnotationData> annotations = modFileInfo.getAnnotations();

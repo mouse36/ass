@@ -10,7 +10,7 @@
     "textureBack": "",
     "renderType": 2,
     "customModelName": "turd:coarse",
-    "rotationMode": 0,
+    "rotationMode": 1,
     "emissiveRendering": false,
     "displayFluidOverlay": false,
     "itemTexture": "",
@@ -24,18 +24,48 @@
     "boundingBoxes": [
       {
         "mx": 2.0,
-        "my": 2.0,
+        "my": 0.0,
         "mz": 2.0,
-        "Mx": 16.0,
-        "My": 16.0,
-        "Mz": 16.0,
+        "Mx": 14.0,
+        "My": 4.0,
+        "Mz": 14.0,
+        "subtract": false
+      },
+      {
+        "mx": 3.0,
+        "my": 4.0,
+        "mz": 3.0,
+        "Mx": 13.0,
+        "My": 6.0,
+        "Mz": 13.0,
+        "subtract": false
+      },
+      {
+        "mx": 5.0,
+        "my": 6.0,
+        "mz": 5.0,
+        "Mx": 11.0,
+        "My": 8.0,
+        "Mz": 11.0,
+        "subtract": false
+      },
+      {
+        "mx": 6.0,
+        "my": 8.0,
+        "mz": 6.0,
+        "Mx": 10.0,
+        "My": 10.0,
+        "Mz": 10.0,
         "subtract": false
       }
     ],
     "name": "Coarse Turd",
-    "specialInfo": [],
-    "hardness": 1.2,
-    "resistance": 1.2,
+    "specialInfo": [
+      "Whoever did this",
+      "It must have hurt"
+    ],
+    "hardness": 0.6,
+    "resistance": 0.6,
     "hasGravity": false,
     "isWaterloggable": true,
     "creativeTab": {
@@ -96,7 +126,7 @@
     },
     "luminance": 0,
     "unbreakable": false,
-    "breakHarvestLevel": 1,
+    "breakHarvestLevel": 0,
     "spawnParticles": false,
     "particleToSpawn": {
       "value": "EXPLOSION_NORMAL"
@@ -123,6 +153,9 @@
     "fluidRestrictions": [],
     "onNeighbourBlockChanges": {
       "name": "ShitWetting"
+    },
+    "onBlockPlayedBy": {
+      "name": "TurdRandomRotation"
     },
     "spawnWorldTypes": [],
     "restrictionBiomes": [],

@@ -6,7 +6,10 @@
     "texture": "smooth_dung",
     "customModelName": "Normal",
     "name": "Smooth Dung",
-    "specialInfo": [],
+    "specialInfo": [
+      "Good for the thrower's hands,",
+      "bad for the receiver's face."
+    ],
     "creativeTab": {
       "value": "COMBAT"
     },
@@ -23,9 +26,12 @@
     "animation": "none",
     "enableMeleeDamage": false,
     "damageVsEntity": 0.0,
+    "onRangedItemUsed": {
+      "name": "ThrowDung"
+    },
     "bulletPower": 0.8,
     "bulletDamage": 0.0,
-    "bulletKnockback": 6,
+    "bulletKnockback": 0,
     "bulletParticles": false,
     "bulletIgnitesFire": false,
     "bulletItemTexture": {

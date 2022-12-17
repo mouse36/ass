@@ -32,10 +32,13 @@
         "subtract": false
       }
     ],
-    "name": "Shit",
-    "specialInfo": [],
-    "hardness": 0.6,
-    "resistance": 0.6,
+    "name": "Shicks",
+    "specialInfo": [
+      "A humble brown building block.",
+      "(dont use this for building wtf)"
+    ],
+    "hardness": 0.3,
+    "resistance": 0.3,
     "hasGravity": false,
     "isWaterloggable": false,
     "creativeTab": {
@@ -96,7 +99,7 @@
     },
     "luminance": 0,
     "unbreakable": false,
-    "breakHarvestLevel": 1,
+    "breakHarvestLevel": 0,
     "spawnParticles": false,
     "particleToSpawn": {
       "value": "EXPLOSION_NORMAL"

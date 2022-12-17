@@ -1,0 +1,37 @@
+{
+  "display": {
+    "icon": {
+      "item": "ass:turd"
+    },
+    "title": {
+      "translate": "advancements.adv_pick_up_turd.title"
+    },
+    "description": {
+      "translate": "advancements.adv_pick_up_turd.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "adv_pick_up_turd": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "ass:turd",
+            "count": {
+              "min": 1,
+              "max": 64
+            }
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "experience": 5
+  },
+  "parent": "ass:adv_shit"
+}

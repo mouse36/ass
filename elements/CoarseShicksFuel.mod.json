@@ -2,7 +2,7 @@
   "_fv": 24,
   "_type": "fuel",
   "definition": {
-    "power": 1400,
+    "power": 1200,
     "block": {
       "value": "CUSTOM:CoarseShicks"
     }

@@ -6,7 +6,10 @@
     "texture": "dung",
     "customModelName": "Normal",
     "name": "Dung",
-    "specialInfo": [],
+    "specialInfo": [
+      "Shit for throwing instead",
+      "of shitting."
+    ],
     "creativeTab": {
       "value": "COMBAT"
     },
@@ -23,6 +26,9 @@
     "animation": "none",
     "enableMeleeDamage": false,
     "damageVsEntity": 0.0,
+    "onRangedItemUsed": {
+      "name": "ThrowDung"
+    },
     "bulletPower": 0.6,
     "bulletDamage": 1.0,
     "bulletKnockback": 6,

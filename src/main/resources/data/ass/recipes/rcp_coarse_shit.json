@@ -1,16 +1,12 @@
 {
   "group": "ass",
-  "type": "minecraft:crafting_shapeless",
-  "ingredients": [
-    {
-      "item": "ass:shit"
-    },
-    {
-      "item": "minecraft:gravel"
-    }
-  ],
+  "type": "minecraft:smelting",
+  "experience": 1,
+  "cookingtime": 200,
+  "ingredient": {
+    "item": "ass:shit"
+  },
   "result": {
-    "item": "ass:coarse_shit",
-    "count": 2
+    "item": "ass:coarse_shit"
   }
 }

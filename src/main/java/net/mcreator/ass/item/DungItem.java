@@ -10,6 +10,8 @@ import net.minecraftforge.api.distmarker.OnlyIn;
 import net.minecraftforge.api.distmarker.Dist;
 
 import net.minecraft.world.World;
+import net.minecraft.util.text.StringTextComponent;
+import net.minecraft.util.text.ITextComponent;
 import net.minecraft.util.math.MathHelper;
 import net.minecraft.util.SoundCategory;
 import net.minecraft.util.ResourceLocation;
@@ -29,13 +31,16 @@ import net.minecraft.entity.IRendersAsItem;
 import net.minecraft.entity.EntityType;
 import net.minecraft.entity.EntityClassification;
 import net.minecraft.entity.Entity;
+import net.minecraft.client.util.ITooltipFlag;
 
+import net.mcreator.ass.procedures.ThrowDungProcedure;
 import net.mcreator.ass.procedures.DungHitPlayerProcedure;
 import net.mcreator.ass.entity.renderer.DungRenderer;
 import net.mcreator.ass.AssModElements;
 
 import java.util.Random;
 import java.util.Map;
+import java.util.List;
 import java.util.HashMap;
 
 @AssModElements.ModElement.Tag
@@ -68,6 +73,13 @@ public class DungItem extends AssModElements.ModElement {
 		}
 
 		@Override
+		public void addInformation(ItemStack itemstack, World world, List<ITextComponent> list, ITooltipFlag flag) {
+			super.addInformation(itemstack, world, list, flag);
+			list.add(new StringTextComponent("Shit for throwing instead"));
+			list.add(new StringTextComponent("of shitting."));
+		}
+
+		@Override
 		public UseAction getUseAction(ItemStack itemstack) {
 			return UseAction.NONE;
 		}
@@ -89,6 +101,11 @@ public class DungItem extends AssModElements.ModElement {
 					ArrowCustomEntity entityarrow = shoot(world, entity, random, 0.6f, 1, 6);
 					itemstack.damageItem(1, entity, e -> e.sendBreakAnimation(entity.getActiveHand()));
 					entityarrow.pickupStatus = AbstractArrowEntity.PickupStatus.DISALLOWED;
+					{
+						Map<String, Object> $_dependencies = new HashMap<>();
+						$_dependencies.put("itemstack", itemstack);
+						ThrowDungProcedure.executeProcedure($_dependencies);
+					}
 					entity.stopActiveHand();
 				}
 			}
@@ -141,6 +158,10 @@ public class DungItem extends AssModElements.ModElement {
 			{
 				Map<String, Object> $_dependencies = new HashMap<>();
 				$_dependencies.put("entity", entity);
+				$_dependencies.put("x", x);
+				$_dependencies.put("y", y);
+				$_dependencies.put("z", z);
+				$_dependencies.put("world", world);
 				DungHitPlayerProcedure.executeProcedure($_dependencies);
 			}
 		}

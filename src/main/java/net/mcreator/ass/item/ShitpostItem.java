@@ -63,7 +63,7 @@ public class ShitpostItem extends AssModElements.ModElement {
 		@Override
 		public void addInformation(ItemStack itemstack, World world, List<ITextComponent> list, ITooltipFlag flag) {
 			super.addInformation(itemstack, world, list, flag);
-			list.add(new StringTextComponent("Right click to write a shitpost"));
+			list.add(new StringTextComponent("Right click to write a shitty message."));
 		}
 
 		@Override

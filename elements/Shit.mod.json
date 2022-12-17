@@ -33,9 +33,14 @@
       }
     ],
     "name": "Shit",
-    "specialInfo": [],
-    "hardness": 0.6,
-    "resistance": 0.6,
+    "specialInfo": [
+      "A humble looking block",
+      "that makes up most",
+      "of the material",
+      "in this world."
+    ],
+    "hardness": 0.3,
+    "resistance": 0.3,
     "hasGravity": false,
     "isWaterloggable": false,
     "creativeTab": {
@@ -96,7 +101,7 @@
     },
     "luminance": 0,
     "unbreakable": false,
-    "breakHarvestLevel": 1,
+    "breakHarvestLevel": 0,
     "spawnParticles": false,
     "particleToSpawn": {
       "value": "EXPLOSION_NORMAL"

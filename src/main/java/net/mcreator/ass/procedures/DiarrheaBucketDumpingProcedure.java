@@ -8,13 +8,17 @@ import net.minecraft.world.IWorld;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.SoundCategory;
 import net.minecraft.util.ResourceLocation;
+import net.minecraft.util.Hand;
 import net.minecraft.util.Direction;
 import net.minecraft.tags.BlockTags;
 import net.minecraft.item.Items;
 import net.minecraft.item.ItemStack;
+import net.minecraft.entity.player.ServerPlayerEntity;
 import net.minecraft.entity.player.PlayerEntity;
+import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.Entity;
 
+import net.mcreator.ass.item.DiarrheaBucketItem;
 import net.mcreator.ass.block.DiarrheaBlock;
 import net.mcreator.ass.AssMod;
 
@@ -64,10 +68,33 @@ public class DiarrheaBucketDumpingProcedure {
 		double y = dependencies.get("y") instanceof Integer ? (int) dependencies.get("y") : (double) dependencies.get("y");
 		double z = dependencies.get("z") instanceof Integer ? (int) dependencies.get("z") : (double) dependencies.get("z");
 		IWorld world = (IWorld) dependencies.get("world");
-		if (entity instanceof PlayerEntity) {
-			ItemStack _setstack = new ItemStack(Items.BUCKET);
-			_setstack.setCount((int) 1);
-			ItemHandlerHelper.giveItemToPlayer(((PlayerEntity) entity), _setstack);
+		if (((((itemstack)).getCount()) == 1)) {
+			if ((((entity instanceof LivingEntity) ? ((LivingEntity) entity).getHeldItemMainhand() : ItemStack.EMPTY)
+					.getItem() == DiarrheaBucketItem.block)) {
+				if (entity instanceof LivingEntity) {
+					ItemStack _setstack = new ItemStack(Items.BUCKET);
+					_setstack.setCount((int) 1);
+					((LivingEntity) entity).setHeldItem(Hand.MAIN_HAND, _setstack);
+					if (entity instanceof ServerPlayerEntity)
+						((ServerPlayerEntity) entity).inventory.markDirty();
+				}
+			}
+			if ((((entity instanceof LivingEntity) ? ((LivingEntity) entity).getHeldItemOffhand() : ItemStack.EMPTY)
+					.getItem() == DiarrheaBucketItem.block)) {
+				if (entity instanceof LivingEntity) {
+					ItemStack _setstack = new ItemStack(Items.BUCKET);
+					_setstack.setCount((int) 1);
+					((LivingEntity) entity).setHeldItem(Hand.OFF_HAND, _setstack);
+					if (entity instanceof ServerPlayerEntity)
+						((ServerPlayerEntity) entity).inventory.markDirty();
+				}
+			}
+		} else {
+			if (entity instanceof PlayerEntity) {
+				ItemStack _setstack = new ItemStack(Items.BUCKET);
+				_setstack.setCount((int) 1);
+				ItemHandlerHelper.giveItemToPlayer(((PlayerEntity) entity), _setstack);
+			}
 		}
 		((itemstack)).shrink((int) 1);
 		if (world instanceof World && !world.isRemote()) {
@@ -82,9 +109,7 @@ public class DiarrheaBucketDumpingProcedure {
 		if ((BlockTags.getCollection().getTagByID(new ResourceLocation(("minecraft:air").toLowerCase(java.util.Locale.ENGLISH)))
 				.contains((world.getBlockState(new BlockPos((int) (x + (direction.getXOffset())), (int) (y + (direction.getYOffset())),
 						(int) (z + (direction.getZOffset()))))).getBlock()))) {
-			world.setBlockState(
-					new BlockPos((int) (x + (direction.getXOffset())), (int) (y + (direction.getYOffset())), (int) (z + (direction.getZOffset()))),
-					DiarrheaBlock.block.getDefaultState(), 3);
+			world.setBlockState(new BlockPos((int) x, (int) y, (int) z), DiarrheaBlock.block.getDefaultState(), 3);
 		}
 	}
 }

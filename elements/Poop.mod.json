@@ -10,7 +10,7 @@
     "textureBack": "",
     "renderType": 2,
     "customModelName": "poop:default",
-    "rotationMode": 0,
+    "rotationMode": 1,
     "emissiveRendering": false,
     "displayFluidOverlay": false,
     "itemTexture": "",
@@ -26,16 +26,83 @@
         "mx": 4.0,
         "my": 0.0,
         "mz": 5.0,
-        "Mx": 6.0,
+        "Mx": 10.0,
         "My": 6.0,
+        "Mz": 10.0,
+        "subtract": false
+      },
+      {
+        "mx": 3.0,
+        "my": 0.0,
+        "mz": 3.0,
+        "Mx": 7.0,
+        "My": 4.0,
+        "Mz": 7.0,
+        "subtract": false
+      },
+      {
+        "mx": 9.0,
+        "my": 0.0,
+        "mz": 4.0,
+        "Mx": 11.0,
+        "My": 2.0,
         "Mz": 6.0,
+        "subtract": false
+      },
+      {
+        "mx": 12.0,
+        "my": 0.0,
+        "mz": 6.0,
+        "Mx": 14.0,
+        "My": 2.0,
+        "Mz": 8.0,
+        "subtract": false
+      },
+      {
+        "mx": 9.0,
+        "my": 0.0,
+        "mz": 8.0,
+        "Mx": 11.0,
+        "My": 2.0,
+        "Mz": 10.0,
+        "subtract": false
+      },
+      {
+        "mx": 8.0,
+        "my": 0.0,
+        "mz": 12.0,
+        "Mx": 10.0,
+        "My": 2.0,
+        "Mz": 14.0,
+        "subtract": false
+      },
+      {
+        "mx": 5.0,
+        "my": 0.0,
+        "mz": 10.0,
+        "Mx": 7.0,
+        "My": 2.0,
+        "Mz": 12.0,
+        "subtract": false
+      },
+      {
+        "mx": 2.0,
+        "my": 0.0,
+        "mz": 8.0,
+        "Mx": 4.0,
+        "My": 2.0,
+        "Mz": 10.0,
         "subtract": false
       }
     ],
     "name": "Poop",
-    "specialInfo": [],
-    "hardness": 0.6,
-    "resistance": 0.6,
+    "specialInfo": [
+      "It is not known what mysterious",
+      "entity pooped this out.",
+      "Even rabbits poop large turds."
+    ],
+    "hardness": 0.3,
+    "resistance": 0.3,
     "hasGravity": false,
     "isWaterloggable": true,
     "creativeTab": {
@@ -48,7 +115,7 @@
     "dropAmount": 1,
     "useLootTableForDrops": false,
     "enchantPowerBonus": 0.0,
-    "plantsGrowOn": true,
+    "plantsGrowOn": false,
     "canRedstoneConnect": false,
     "lightOpacity": 0,
     "material": {
@@ -96,7 +163,7 @@
     },
     "luminance": 0,
     "unbreakable": false,
-    "breakHarvestLevel": 1,
+    "breakHarvestLevel": 0,
     "spawnParticles": false,
     "particleToSpawn": {
       "value": "EXPLOSION_NORMAL"
@@ -123,6 +190,9 @@
     "fluidRestrictions": [],
     "onNeighbourBlockChanges": {
       "name": "ShitWetting"
+    },
+    "onBlockPlayedBy": {
+      "name": "TurdRandomRotation"
     },
     "spawnWorldTypes": [],
     "restrictionBiomes": [],

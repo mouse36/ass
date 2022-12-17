@@ -32,10 +32,14 @@
         "subtract": false
       }
     ],
-    "name": "Smooth Shit",
-    "specialInfo": [],
-    "hardness": 0.6,
-    "resistance": 0.6,
+    "name": "Smooth Shicks",
+    "specialInfo": [
+      "Polishing and cutting this",
+      "shit was completely unnecessary,",
+      "but good job I guess."
+    ],
+    "hardness": 0.2,
+    "resistance": 0.2,
     "hasGravity": false,
     "isWaterloggable": false,
     "creativeTab": {
@@ -70,7 +74,7 @@
     "flammability": 0,
     "fireSpreadSpeed": 0,
     "isLadder": false,
-    "slipperiness": 0.6,
+    "slipperiness": 0.8,
     "speedFactor": 0.6,
     "jumpFactor": 1.0,
     "reactionToPushing": "NORMAL",
@@ -96,7 +100,7 @@
     },
     "luminance": 0,
     "unbreakable": false,
-    "breakHarvestLevel": 1,
+    "breakHarvestLevel": 0,
     "spawnParticles": false,
     "particleToSpawn": {
       "value": "EXPLOSION_NORMAL"

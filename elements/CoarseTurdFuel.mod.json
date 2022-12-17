@@ -2,7 +2,7 @@
   "_fv": 24,
   "_type": "fuel",
   "definition": {
-    "power": 600,
+    "power": 500,
     "block": {
       "value": "CUSTOM:CoarseDung"
     }

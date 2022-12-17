@@ -12,6 +12,6 @@ public class CoarseShicksFuelFuel {
 	@SubscribeEvent
 	public static void furnaceFuelBurnTimeEvent(FurnaceFuelBurnTimeEvent event) {
 		if (event.getItemStack().getItem() == CoarseShicksBlock.block.asItem())
-			event.setBurnTime(1400);
+			event.setBurnTime(1200);
 	}
 }

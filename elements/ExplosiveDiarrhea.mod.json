@@ -33,7 +33,12 @@
       }
     ],
     "name": "Explosive Diarrhea",
-    "specialInfo": [],
+    "specialInfo": [
+      "An explosive excretion",
+      "which hides a volatile secret",
+      "underneath thick layers",
+      "of brown."
+    ],
     "hardness": 0.0,
     "resistance": 0.0,
     "hasGravity": false,
@@ -121,6 +126,12 @@
     "isFluidTank": false,
     "fluidCapacity": 8000,
     "fluidRestrictions": [],
+    "onEntityCollides": {
+      "name": "ExplosiveDiarrheaLuckyBlockUltraCool"
+    },
+    "onEntityWalksOn": {
+      "name": "ExplosiveDiarrheaLuckyBlockUltraCool"
+    },
     "spawnWorldTypes": [],
     "restrictionBiomes": [],
     "blocksToReplace": [

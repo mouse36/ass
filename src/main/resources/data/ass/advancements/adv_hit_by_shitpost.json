@@ -1,0 +1,26 @@
+{
+  "display": {
+    "icon": {
+      "item": "ass:written_shitpost"
+    },
+    "title": {
+      "translate": "advancements.adv_hit_by_shitpost.title"
+    },
+    "description": {
+      "translate": "advancements.adv_hit_by_shitpost.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "adv_hit_by_shitpost": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "rewards": {
+    "experience": 5
+  },
+  "parent": "ass:adv_shit"
+}

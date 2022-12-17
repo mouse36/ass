@@ -44,7 +44,7 @@ public class LaxativeActionProcedure {
 		double y = dependencies.get("y") instanceof Integer ? (int) dependencies.get("y") : (double) dependencies.get("y");
 		double z = dependencies.get("z") instanceof Integer ? (int) dependencies.get("z") : (double) dependencies.get("z");
 		IWorld world = (IWorld) dependencies.get("world");
-		for (int index0 = 0; index0 < (int) (36); index0++) {
+		for (int index0 = 0; index0 < (int) (25); index0++) {
 			new Object() {
 				private int ticks = 0;
 				private float waitTicks;
@@ -76,7 +76,7 @@ public class LaxativeActionProcedure {
 					}
 					MinecraftForge.EVENT_BUS.unregister(this);
 				}
-			}.start(world, (int) 6);
+			}.start(world, (int) 5);
 		}
 	}
 }

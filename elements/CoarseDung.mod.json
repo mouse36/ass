@@ -6,7 +6,10 @@
     "texture": "coarse_dung",
     "customModelName": "Normal",
     "name": "Coarse Dung",
-    "specialInfo": [],
+    "specialInfo": [
+      "Coarse shit for shitting",
+      "in a pain-free manner."
+    ],
     "creativeTab": {
       "value": "COMBAT"
     },
@@ -23,18 +26,18 @@
     "animation": "none",
     "enableMeleeDamage": false,
     "damageVsEntity": 0.0,
+    "onRangedItemUsed": {
+      "name": "ThrowDung"
+    },
     "bulletPower": 0.3,
     "bulletDamage": 6.0,
-    "bulletKnockback": 6,
+    "bulletKnockback": 0,
     "bulletParticles": false,
     "bulletIgnitesFire": false,
     "bulletItemTexture": {
       "value": "CUSTOM:CoarseDung"
     },
     "bulletModel": "Default",
-    "customBulletModelTexture": "",
-    "onBulletHitsPlayer": {
-      "name": "DungHitPlayer"
-    }
+    "customBulletModelTexture": ""
   }
 }

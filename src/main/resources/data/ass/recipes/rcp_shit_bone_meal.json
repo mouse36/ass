@@ -4,10 +4,13 @@
   "ingredients": [
     {
       "item": "ass:shit"
+    },
+    {
+      "item": "minecraft:brown_mushroom"
     }
   ],
   "result": {
     "item": "minecraft:bone_meal",
-    "count": 1
+    "count": 24
   }
 }

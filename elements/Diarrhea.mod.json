@@ -8,7 +8,7 @@
     "textureFlowing": "smooth_shit",
     "tintType": "No tint",
     "canMultiply": false,
-    "flowRate": 6,
+    "flowRate": 12,
     "levelDecrease": 2,
     "slopeFindDistance": 6,
     "spawnParticles": false,

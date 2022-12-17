@@ -19,8 +19,8 @@
             "falpha": 0.0
           },
           "name": "WRITE YOUR FUNNY SHIT",
-          "x": 132,
-          "y": 44
+          "x": 158,
+          "y": 45
         }
       },
       {
@@ -32,8 +32,8 @@
             "falpha": 0.0
           },
           "name": "IN THE TEXT FIELDS BELOW",
-          "x": 131,
-          "y": 56
+          "x": 152,
+          "y": 57
         }
       },
       {
@@ -43,7 +43,7 @@
           "width": 120,
           "height": 20,
           "name": "text1",
-          "x": 131,
+          "x": 153,
           "y": 69
         }
       },
@@ -54,7 +54,7 @@
           "width": 120,
           "height": 20,
           "name": "text2",
-          "x": 131,
+          "x": 153,
           "y": 89
         }
       },
@@ -65,7 +65,7 @@
           "width": 120,
           "height": 20,
           "name": "text3",
-          "x": 131,
+          "x": 153,
           "y": 109
         }
       },
@@ -76,7 +76,7 @@
           "width": 120,
           "height": 20,
           "name": "text4",
-          "x": 131,
+          "x": 153,
           "y": 129
         }
       },
@@ -87,19 +87,22 @@
           "width": 120,
           "height": 20,
           "name": "text5",
-          "x": 131,
+          "x": 153,
           "y": 149
         }
       },
       {
-        "type": "textfield",
+        "type": "button",
         "data": {
-          "placeholder": "",
-          "width": 120,
+          "text": "GOTEM",
+          "onClick": {
+            "name": "CloseShitpostWritingGUI"
+          },
+          "width": 50,
           "height": 20,
-          "name": "text6",
-          "x": 131,
-          "y": 169
+          "name": "GOTEM",
+          "x": 321,
+          "y": 141
         }
       }
     ],

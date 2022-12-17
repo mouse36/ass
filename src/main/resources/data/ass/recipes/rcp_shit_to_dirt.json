@@ -1,42 +1,22 @@
 {
   "group": "ass",
-  "type": "minecraft:crafting_shaped",
-  "pattern": [
-    "012",
-    "345",
-    "678"
-  ],
-  "key": {
-    "0": {
-      "item": "ass:shit"
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "ass:coarse_shit"
     },
-    "1": {
-      "item": "ass:shit"
+    {
+      "item": "minecraft:gravel"
     },
-    "2": {
-      "item": "ass:shit"
+    {
+      "item": "minecraft:gravel"
     },
-    "3": {
-      "item": "ass:shit"
-    },
-    "4": {
-      "item": "ass:shit"
-    },
-    "5": {
-      "item": "ass:shit"
-    },
-    "6": {
-      "item": "ass:shit"
-    },
-    "7": {
-      "item": "ass:shit"
-    },
-    "8": {
-      "item": "ass:shit"
+    {
+      "item": "ass:coarse_shit"
     }
-  },
+  ],
   "result": {
     "item": "minecraft:dirt",
-    "count": 4
+    "count": 16
   }
 }

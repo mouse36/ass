@@ -5,36 +5,36 @@
     "recipeType": "Crafting",
     "xpReward": 0.0,
     "cookingTime": 200,
-    "recipeRetstackSize": 4,
+    "recipeRetstackSize": 16,
     "group": "",
-    "recipeShapeless": false,
+    "recipeShapeless": true,
     "recipeSlots": [
       {
-        "value": "CUSTOM:Shit"
+        "value": "CUSTOM:CoarseShit"
       },
       {
-        "value": "CUSTOM:Shit"
+        "value": "Blocks.GRAVEL"
       },
       {
-        "value": "CUSTOM:Shit"
+        "value": ""
       },
       {
-        "value": "CUSTOM:Shit"
+        "value": "Blocks.GRAVEL"
       },
       {
-        "value": "CUSTOM:Shit"
+        "value": "CUSTOM:CoarseShit"
       },
       {
-        "value": "CUSTOM:Shit"
+        "value": ""
       },
       {
-        "value": "CUSTOM:Shit"
+        "value": ""
       },
       {
-        "value": "CUSTOM:Shit"
+        "value": ""
       },
       {
-        "value": "CUSTOM:Shit"
+        "value": ""
       }
     ],
     "recipeReturnStack": {

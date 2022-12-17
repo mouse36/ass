@@ -1,7 +1,19 @@
 {
   "variants": {
-    "": {
+    "facing=north": {
       "model": "ass:block/poop"
+    },
+    "facing=east": {
+      "model": "ass:block/poop",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "ass:block/poop",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "ass:block/poop",
+      "y": 270
     }
   }
 }

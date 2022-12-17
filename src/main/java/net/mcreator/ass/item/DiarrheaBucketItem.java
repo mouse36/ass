@@ -5,6 +5,8 @@ import net.minecraftforge.registries.ObjectHolder;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 
 import net.minecraft.world.World;
+import net.minecraft.util.text.StringTextComponent;
+import net.minecraft.util.text.ITextComponent;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.Direction;
 import net.minecraft.util.ActionResultType;
@@ -17,6 +19,7 @@ import net.minecraft.item.Item;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.dispenser.OptionalDispenseBehavior;
 import net.minecraft.dispenser.IBlockSource;
+import net.minecraft.client.util.ITooltipFlag;
 import net.minecraft.block.DispenserBlock;
 import net.minecraft.block.BlockState;
 
@@ -25,6 +28,7 @@ import net.mcreator.ass.procedures.DiarrheaBucketDumpingProcedure;
 import net.mcreator.ass.AssModElements;
 
 import java.util.Map;
+import java.util.List;
 import java.util.HashMap;
 
 @AssModElements.ModElement.Tag
@@ -96,6 +100,13 @@ public class DiarrheaBucketItem extends AssModElements.ModElement {
 		@Override
 		public float getDestroySpeed(ItemStack par1ItemStack, BlockState par2Block) {
 			return 1F;
+		}
+
+		@Override
+		public void addInformation(ItemStack itemstack, World world, List<ITextComponent> list, ITooltipFlag flag) {
+			super.addInformation(itemstack, world, list, flag);
+			list.add(new StringTextComponent("The wateriness of this shit"));
+			list.add(new StringTextComponent("is unmatched by any other."));
 		}
 
 		@Override

@@ -12,6 +12,6 @@ public class CoarseShitFuelFuel {
 	@SubscribeEvent
 	public static void furnaceFuelBurnTimeEvent(FurnaceFuelBurnTimeEvent event) {
 		if (event.getItemStack().getItem() == CoarseShitBlock.block.asItem())
-			event.setBurnTime(1200);
+			event.setBurnTime(1000);
 	}
 }

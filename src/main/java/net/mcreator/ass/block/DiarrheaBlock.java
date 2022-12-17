@@ -62,7 +62,7 @@ public class DiarrheaBlock extends AssModElements.ModElement {
 				FluidAttributes.builder(new ResourceLocation("ass:blocks/smooth_shit"), new ResourceLocation("ass:blocks/smooth_shit")).luminosity(0)
 						.density(1000).viscosity(1000).temperature(300).rarity(Rarity.COMMON)
 						.sound(ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("item.bucket.empty")))).explosionResistance(100f)
-								.tickRate(6).levelDecreasePerBlock(2).slopeFindDistance(6).block(() -> block);
+								.tickRate(12).levelDecreasePerBlock(2).slopeFindDistance(6).block(() -> block);
 		still = (FlowingFluid) new ForgeFlowingFluid.Source(fluidproperties).setRegistryName("diarrhea");
 		flowing = (FlowingFluid) new ForgeFlowingFluid.Flowing(fluidproperties).setRegistryName("diarrhea_flowing");
 		elements.blocks.add(() -> new FlowingFluidBlock(still,

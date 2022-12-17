@@ -647,6 +647,10 @@
       "metadata": {
         "dependencies": [
           {
+            "name": "direction",
+            "type": "direction"
+          },
+          {
             "name": "entity",
             "type": "entity"
           },
@@ -924,16 +928,6 @@
       "path": "~/mouse"
     },
     {
-      "name": "WrittenShitpost",
-      "type": "rangeditem",
-      "sortid": 87,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "written_shitpost",
-      "path": "~/mouse"
-    },
-    {
       "name": "Shitpost",
       "type": "item",
       "sortid": 88,
@@ -978,8 +972,8 @@
             "type": "entity"
           },
           {
-            "name": "sourceentity",
-            "type": "entity"
+            "name": "itemstack",
+            "type": "itemstack"
           },
           {
             "name": "x",
@@ -1040,28 +1034,6 @@
           {
             "name": "world",
             "type": "world"
-          }
-        ]
-      },
-      "path": "~/mouse"
-    },
-    {
-      "name": "ThrowShitpost",
-      "type": "procedure",
-      "sortid": 95,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "throw_shitpost",
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "itemstack",
-            "type": "itemstack"
           }
         ]
       },
@@ -1246,40 +1218,6 @@
       "path": "~/mouse"
     },
     {
-      "name": "PlayerShitting",
-      "type": "procedure",
-      "sortid": 104,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "player_shitting",
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      },
-      "path": "~/mouse"
-    },
-    {
       "name": "ShartShard",
       "type": "item",
       "sortid": 105,
@@ -1340,6 +1278,10 @@
       "metadata": {
         "dependencies": [
           {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
             "name": "x",
             "type": "number"
           },
@@ -1367,24 +1309,6 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "start_shit_progress_counter",
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          }
-        ]
-      },
-      "path": "~/mouse"
-    },
-    {
-      "name": "ShitProgressUpdate",
-      "type": "procedure",
-      "sortid": 111,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "shit_progress_update",
       "metadata": {
         "dependencies": [
           {
@@ -1464,6 +1388,280 @@
         ]
       },
       "path": "~/mouse"
+    },
+    {
+      "name": "TurdRandomRotation",
+      "type": "procedure",
+      "sortid": 115,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "turd_random_rotation",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/mouse"
+    },
+    {
+      "name": "AnimalsShitting",
+      "type": "procedure",
+      "sortid": 116,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "animals_shitting",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/mouse"
+    },
+    {
+      "name": "PlayersShitting",
+      "type": "procedure",
+      "sortid": 117,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "players_shitting",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/mouse"
+    },
+    {
+      "name": "ThrowDung",
+      "type": "procedure",
+      "sortid": 118,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "throw_dung",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          }
+        ]
+      },
+      "path": "~/mouse"
+    },
+    {
+      "name": "ClearDungFromFace",
+      "type": "procedure",
+      "sortid": 119,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "clear_dung_from_face",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/mouse"
+    },
+    {
+      "name": "WrittenShitpost",
+      "type": "item",
+      "sortid": 120,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "written_shitpost",
+      "path": "~/mouse"
+    },
+    {
+      "name": "AdvShit",
+      "type": "achievement",
+      "sortid": 121,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "adv_shit",
+      "path": "~/mouse"
+    },
+    {
+      "name": "AdvThrowDung",
+      "type": "achievement",
+      "sortid": 122,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "adv_throw_dung",
+      "path": "~/mouse"
+    },
+    {
+      "name": "AdvHitByDung",
+      "type": "achievement",
+      "sortid": 123,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "adv_hit_by_dung",
+      "path": "~/mouse"
+    },
+    {
+      "name": "AdvCoarseShit",
+      "type": "achievement",
+      "sortid": 124,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "adv_coarse_shit",
+      "path": "~/mouse"
+    },
+    {
+      "name": "AdvShicks",
+      "type": "achievement",
+      "sortid": 125,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "adv_shicks",
+      "path": "~/mouse"
+    },
+    {
+      "name": "AdvPickUpTurd",
+      "type": "achievement",
+      "sortid": 126,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "adv_pick_up_turd",
+      "path": "~/mouse"
+    },
+    {
+      "name": "AdvSmoothTurd",
+      "type": "achievement",
+      "sortid": 127,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "adv_smooth_turd",
+      "path": "~/mouse"
+    },
+    {
+      "name": "AdvHitByCoarseDung",
+      "type": "achievement",
+      "sortid": 128,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "adv_hit_by_coarse_dung",
+      "path": "~/mouse"
+    },
+    {
+      "name": "AdvShitpost",
+      "type": "achievement",
+      "sortid": 129,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "adv_shitpost",
+      "path": "~/mouse"
+    },
+    {
+      "name": "AdvHitByShitpost",
+      "type": "achievement",
+      "sortid": 130,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "adv_hit_by_shitpost",
+      "path": "~/mouse"
+    },
+    {
+      "name": "AdvShartShard",
+      "type": "achievement",
+      "sortid": 131,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "adv_shart_shard",
+      "path": "~/mouse"
     }
   ],
   "variable_elements": [],
@@ -1479,36 +1677,67 @@
         "shit6"
       ],
       "category": "neutral",
-      "subtitle": "Shitty shit shits"
+      "subtitle": "Shit shitting"
+    },
+    {
+      "name": "rare_shard_shit",
+      "files": [
+        "rare_shard_shit"
+      ],
+      "category": "neutral",
+      "subtitle": "Elusive lucky shit happens"
     }
   ],
   "language_map": {
     "en_us": {
-      "block.ass.diarrhea": "Diarrhea",
+      "advancements.adv_smooth_turd.title": "Meconium",
+      "advancements.adv_pick_up_turd.title": "Pick Up After Yourself",
+      "advancements.adv_hit_by_shitpost.title": "Shitposted",
       "item.ass.smooth_dung": "Smooth Dung",
       "block.ass.smooth_shit": "Smooth Shit",
       "item.ass.diarrhea_bucket": "Diarrhea Bucket",
+      "advancements.adv_smooth_turd.descr": "Get your hands on a limited edition turd",
       "block.ass.shit": "Shit",
-      "block.ass.either": "Either",
+      "advancements.adv_pick_up_turd.descr": "Or someone else (wtf)",
       "block.ass.coarse_shit": "Coarse Shit",
-      "block.ass.smooth_shicks": "Smooth Shit",
-      "block.ass.coarse_shicks": "Coarse Shit",
-      "block.ass.turd": "Turd",
+      "block.ass.smooth_shicks": "Smooth Shicks",
       "block.ass.coarse_turd": "Coarse Turd",
-      "block.ass.dither": "Dither",
-      "subtitles.shit": "Shitty shit shits",
-      "fluid.ass.diarrhea": "Diarrhea",
+      "advancements.adv_hit_by_dung.title": "Shitface",
       "block.ass.smooth_poop": "Smooth Poop",
-      "item.ass.dung": "Dung",
-      "block.ass.shicks": "Shit",
+      "advancements.adv_throw_dung.descr": "Throw dung at someone",
+      "advancements.adv_shit.descr": "The basic building block of everything",
+      "advancements.adv_shart_shard.descr": "Find the fabled Shart Shard",
+      "block.ass.shicks": "Shicks",
       "item.ass.shitpost": "Shitpost",
-      "block.ass.coarse_poop": "Coarse Poop",
-      "item.ass.shart_shard": "Shart Shard",
-      "block.ass.poop": "Poop",
+      "advancements.adv_shicks.descr": "Make a questionable building choice",
+      "advancements.adv_shitpost.descr": "Craft a shitpost",
       "item.ass.coarse_dung": "Coarse Dung",
-      "block.ass.explosive_diarrhea": "Explosive Diarrhea",
+      "advancements.adv_hit_by_coarse_dung.title": "Ouch Head Bonk",
       "item.ass.written_shitpost": "Written Shitpost",
-      "block.ass.smooth_turd": "Smooth Turd"
+      "advancements.adv_coarse_shit.descr": "Of coarse you needed to craft this shit.",
+      "block.ass.diarrhea": "Diarrhea",
+      "block.ass.either": "Either",
+      "block.ass.coarse_shicks": "Coarse Shicks",
+      "block.ass.turd": "Turd",
+      "advancements.adv_hit_by_coarse_dung.descr": "Get hit by coarse dung",
+      "advancements.adv_throw_dung.title": "I Give a Shit About You",
+      "subtitles.rare_shard_shit": "Elusive lucky shit happens",
+      "block.ass.dither": "Dither",
+      "subtitles.shit": "Shit shitting",
+      "fluid.ass.diarrhea": "Diarrhea",
+      "advancements.adv_shit.title": "Shit",
+      "item.ass.dung": "Dung",
+      "advancements.adv_shart_shard.title": "Analytical Asshole",
+      "advancements.adv_shicks.title": "Aw Shicks",
+      "advancements.adv_coarse_shit.title": "Of Coarse",
+      "item.ass.shart_shard": "Shart Shard",
+      "block.ass.coarse_poop": "Coarse Poop",
+      "block.ass.poop": "Poop",
+      "advancements.adv_hit_by_dung.descr": "Get hit by dung",
+      "block.ass.explosive_diarrhea": "Explosive Diarrhea",
+      "block.ass.smooth_turd": "Smooth Turd",
+      "advancements.adv_shitpost.title": "Mod\u0027s Namesake",
+      "advancements.adv_hit_by_shitpost.descr": "Get stunned by a flying shitpost"
     }
   },
   "foldersRoot": {
