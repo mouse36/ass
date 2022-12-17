@@ -1,0 +1,71 @@
+{
+  "_fv": 24,
+  "_type": "tag",
+  "definition": {
+    "type": "Items",
+    "items": [
+      {
+        "value": "CUSTOM:Shit"
+      },
+      {
+        "value": "CUSTOM:CoarseShit"
+      },
+      {
+        "value": "CUSTOM:SmoothShit"
+      },
+      {
+        "value": "CUSTOM:Shicks"
+      },
+      {
+        "value": "CUSTOM:CoarseShicks"
+      },
+      {
+        "value": "CUSTOM:SmoothShicks"
+      },
+      {
+        "value": "CUSTOM:Turd"
+      },
+      {
+        "value": "CUSTOM:CoarseTurd"
+      },
+      {
+        "value": "CUSTOM:SmoothTurd"
+      },
+      {
+        "value": "CUSTOM:Poop"
+      },
+      {
+        "value": "CUSTOM:CoarsePoop"
+      },
+      {
+        "value": "CUSTOM:SmoothPoop"
+      },
+      {
+        "value": "CUSTOM:Dung"
+      },
+      {
+        "value": "CUSTOM:CoarseDung"
+      },
+      {
+        "value": "CUSTOM:SmoothDung"
+      },
+      {
+        "value": "CUSTOM:Diarrhea"
+      },
+      {
+        "value": "CUSTOM:DiarrheaBucket"
+      },
+      {
+        "value": "CUSTOM:WrittenShitpost"
+      },
+      {
+        "value": "CUSTOM:Shitpost"
+      }
+    ],
+    "blocks": [],
+    "functions": [],
+    "entities": [],
+    "name": "shit",
+    "namespace": "mod"
+  }
+}

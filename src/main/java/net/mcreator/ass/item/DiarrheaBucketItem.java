@@ -2,6 +2,7 @@
 package net.mcreator.ass.item;
 
 import net.minecraftforge.registries.ObjectHolder;
+import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 
 import net.minecraft.world.World;
 import net.minecraft.util.math.BlockPos;
@@ -14,8 +15,12 @@ import net.minecraft.item.ItemStack;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.Item;
 import net.minecraft.entity.player.PlayerEntity;
+import net.minecraft.dispenser.OptionalDispenseBehavior;
+import net.minecraft.dispenser.IBlockSource;
+import net.minecraft.block.DispenserBlock;
 import net.minecraft.block.BlockState;
 
+import net.mcreator.ass.procedures.DispenseDiarrheaBucketProcedure;
 import net.mcreator.ass.procedures.DiarrheaBucketDumpingProcedure;
 import net.mcreator.ass.AssModElements;
 
@@ -33,6 +38,34 @@ public class DiarrheaBucketItem extends AssModElements.ModElement {
 	@Override
 	public void initElements() {
 		elements.items.add(() -> new ItemCustom());
+	}
+
+	@Override
+	public void init(FMLCommonSetupEvent event) {
+		DispenserBlock.registerDispenseBehavior(block, new OptionalDispenseBehavior() {
+			public ItemStack dispenseStack(IBlockSource blockSource, ItemStack stack) {
+				ItemStack itemstack = stack.copy();
+				World world = blockSource.getWorld();
+				Direction direction = blockSource.getBlockState().get(DispenserBlock.FACING);
+				int x = blockSource.getBlockPos().getX();
+				int y = blockSource.getBlockPos().getY();
+				int z = blockSource.getBlockPos().getZ();
+				this.setSuccessful(true);
+				boolean success = this.isSuccessful();
+				{
+					Map<String, Object> $_dependencies = new HashMap<>();
+					$_dependencies.put("direction", direction);
+					$_dependencies.put("x", x);
+					$_dependencies.put("y", y);
+					$_dependencies.put("z", z);
+					$_dependencies.put("world", world);
+					DispenseDiarrheaBucketProcedure.executeProcedure($_dependencies);
+				}
+				if (success)
+					itemstack.shrink(1);
+				return itemstack;
+			}
+		});
 	}
 	public static class ItemCustom extends Item {
 		public ItemCustom() {

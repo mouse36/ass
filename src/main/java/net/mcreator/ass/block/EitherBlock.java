@@ -30,6 +30,7 @@ import net.minecraft.item.ItemGroup;
 import net.minecraft.item.Item;
 import net.minecraft.item.BlockItemUseContext;
 import net.minecraft.item.BlockItem;
+import net.minecraft.block.material.MaterialColor;
 import net.minecraft.block.material.Material;
 import net.minecraft.block.SoundType;
 import net.minecraft.block.FallingBlock;
@@ -61,7 +62,7 @@ public class EitherBlock extends AssModElements.ModElement {
 	}
 	public static class CustomBlock extends FallingBlock {
 		public CustomBlock() {
-			super(Block.Properties.create(Material.MISCELLANEOUS).sound(SoundType.GLASS).hardnessAndResistance(4f, 4f).setLightLevel(s -> 4)
+			super(Block.Properties.create(Material.PORTAL).sound(SoundType.GLASS).hardnessAndResistance(4f, 4f).setLightLevel(s -> 4)
 					.doesNotBlockMovement().setNeedsPostProcessing((bs, br, bp) -> true).setEmmisiveRendering((bs, br, bp) -> true));
 			setRegistryName("either");
 		}
@@ -74,6 +75,11 @@ public class EitherBlock extends AssModElements.ModElement {
 		@Override
 		public boolean isReplaceable(BlockState state, BlockItemUseContext context) {
 			return context.getItem().getItem() != this.asItem();
+		}
+
+		@Override
+		public MaterialColor getMaterialColor() {
+			return MaterialColor.PURPLE;
 		}
 
 		@Override

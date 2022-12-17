@@ -908,15 +908,6 @@
       "path": "~/mouse"
     },
     {
-      "name": "NoiseTag",
-      "type": "tag",
-      "sortid": 84,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "noise_tag"
-    },
-    {
       "name": "WrittenShitpost",
       "type": "rangeditem",
       "sortid": 87,
@@ -1103,34 +1094,284 @@
       "ids": {},
       "registry_name": "shitpost_writing_gui",
       "path": "~/mouse"
+    },
+    {
+      "name": "DispenseDiarrheaBucket",
+      "type": "procedure",
+      "sortid": 98,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "dispense_diarrhea_bucket",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "direction",
+            "type": "direction"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/mouse"
+    },
+    {
+      "name": "NoiseTag",
+      "type": "tag",
+      "sortid": 99,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "noise_tag"
+    },
+    {
+      "name": "DilutesShitTag",
+      "type": "tag",
+      "sortid": 100,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "dilutes_shit_tag"
+    },
+    {
+      "name": "ShitTag",
+      "type": "tag",
+      "sortid": 101,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "shit_tag"
+    },
+    {
+      "name": "ShitWetting",
+      "type": "procedure",
+      "sortid": 99,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "shit_wetting",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/mouse"
+    },
+    {
+      "name": "DoesntProduceTurdsTag",
+      "type": "tag",
+      "sortid": 102,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "doesnt_produce_turds_tag"
+    },
+    {
+      "name": "Shitting",
+      "type": "procedure",
+      "sortid": 103,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "shitting",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/mouse"
+    },
+    {
+      "name": "PlayerShitting",
+      "type": "procedure",
+      "sortid": 104,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "player_shitting",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/mouse"
+    },
+    {
+      "name": "ShartShard",
+      "type": "item",
+      "sortid": 105,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "shart_shard",
+      "path": "~/mouse"
+    },
+    {
+      "name": "RcpShartShardToDither",
+      "type": "recipe",
+      "sortid": 106,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "rcp_shart_shard_to_dither",
+      "path": "~/mouse"
+    },
+    {
+      "name": "RcpShartShardToEither",
+      "type": "recipe",
+      "sortid": 107,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "rcp_shart_shard_to_either",
+      "path": "~/mouse"
+    },
+    {
+      "name": "ExplosiveDiarrhea",
+      "type": "block",
+      "sortid": 108,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "explosive_diarrhea",
+      "path": "~/mouse"
+    },
+    {
+      "name": "RcpExplosiveDiarrhea",
+      "type": "recipe",
+      "sortid": 109,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "rcp_explosive_diarrhea",
+      "path": "~/mouse"
+    },
+    {
+      "name": "ExplosiveDiarrheaLuckyBlockUltraCool",
+      "type": "procedure",
+      "sortid": 110,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "explosive_diarrhea_lucky_block_ultra_cool",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/mouse"
     }
   ],
   "variable_elements": [],
   "sound_elements": [],
   "language_map": {
     "en_us": {
-      "block.ass.coarse_turd": "Coarse Turd",
       "block.ass.diarrhea": "Diarrhea",
+      "item.ass.smooth_dung": "Smooth Dung",
+      "block.ass.smooth_shit": "Smooth Shit",
+      "item.ass.diarrhea_bucket": "Diarrhea Bucket",
+      "block.ass.shit": "Shit",
+      "block.ass.either": "Either",
+      "block.ass.coarse_shit": "Coarse Shit",
+      "block.ass.smooth_shicks": "Smooth Shit",
+      "block.ass.coarse_shicks": "Coarse Shit",
+      "block.ass.turd": "Turd",
+      "block.ass.coarse_turd": "Coarse Turd",
       "block.ass.dither": "Dither",
       "fluid.ass.diarrhea": "Diarrhea",
       "block.ass.smooth_poop": "Smooth Poop",
       "item.ass.dung": "Dung",
-      "item.ass.smooth_dung": "Smooth Dung",
-      "block.ass.smooth_shit": "Smooth Shit",
       "block.ass.shicks": "Shit",
       "item.ass.shitpost": "Shitpost",
       "block.ass.coarse_poop": "Coarse Poop",
-      "item.ass.diarrhea_bucket": "Diarrhea Bucket",
+      "item.ass.shart_shard": "Shart Shard",
       "block.ass.poop": "Poop",
-      "block.ass.shit": "Shit",
       "item.ass.coarse_dung": "Coarse Dung",
-      "block.ass.coarse_shit": "Coarse Shit",
-      "block.ass.either": "Either",
+      "block.ass.explosive_diarrhea": "Explosive Diarrhea",
       "item.ass.written_shitpost": "Written Shitpost",
-      "block.ass.smooth_shicks": "Smooth Shit",
-      "block.ass.smooth_turd": "Smooth Turd",
-      "block.ass.coarse_shicks": "Coarse Shit",
-      "block.ass.turd": "Turd"
+      "block.ass.smooth_turd": "Smooth Turd"
     }
   },
   "foldersRoot": {

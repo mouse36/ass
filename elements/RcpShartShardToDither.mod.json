@@ -1,0 +1,46 @@
+{
+  "_fv": 24,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "recipeRetstackSize": 1,
+    "group": "",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:CoarseDung"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:CoarseDung"
+      },
+      {
+        "value": "CUSTOM:ShartShard"
+      },
+      {
+        "value": "CUSTOM:CoarseDung"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:CoarseDung"
+      },
+      {
+        "value": ""
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:Dither"
+    },
+    "name": "rcp_shart_shard_to_dither",
+    "namespace": "mod"
+  }
+}

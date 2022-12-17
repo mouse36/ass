@@ -1,0 +1,30 @@
+{
+  "group": "ass",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " 1 ",
+    "345",
+    " 7 "
+  ],
+  "key": {
+    "1": {
+      "item": "ass:coarse_dung"
+    },
+    "3": {
+      "item": "ass:coarse_dung"
+    },
+    "4": {
+      "item": "ass:shart_shard"
+    },
+    "5": {
+      "item": "ass:coarse_dung"
+    },
+    "7": {
+      "item": "ass:coarse_dung"
+    }
+  },
+  "result": {
+    "item": "ass:dither",
+    "count": 1
+  }
+}

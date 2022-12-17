@@ -1,0 +1,26 @@
+{
+  "_fv": 24,
+  "_type": "tag",
+  "definition": {
+    "type": "Items",
+    "items": [
+      {
+        "value": "Blocks.FLOWING_WATER"
+      },
+      {
+        "value": "Blocks.WATER"
+      },
+      {
+        "value": "Blocks.BUBBLE_COLUMN"
+      },
+      {
+        "value": "CUSTOM:Diarrhea"
+      }
+    ],
+    "blocks": [],
+    "functions": [],
+    "entities": [],
+    "name": "dilutes_shit",
+    "namespace": "mod"
+  }
+}

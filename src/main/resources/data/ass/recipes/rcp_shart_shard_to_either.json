@@ -1,0 +1,30 @@
+{
+  "group": "ass",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "0 2",
+    " 4 ",
+    "6 8"
+  ],
+  "key": {
+    "0": {
+      "item": "ass:coarse_dung"
+    },
+    "2": {
+      "item": "ass:coarse_dung"
+    },
+    "4": {
+      "item": "ass:shart_shard"
+    },
+    "6": {
+      "item": "ass:coarse_dung"
+    },
+    "8": {
+      "item": "ass:coarse_dung"
+    }
+  },
+  "result": {
+    "item": "ass:either",
+    "count": 4
+  }
+}

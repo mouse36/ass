@@ -32,6 +32,9 @@
     "onRightClickedOnBlock": {
       "name": "DiarrheaBucketDumping"
     },
-    "hasDispenseBehavior": false
+    "hasDispenseBehavior": true,
+    "dispenseResultItemstack": {
+      "name": "DispenseDiarrheaBucket"
+    }
   }
 }
