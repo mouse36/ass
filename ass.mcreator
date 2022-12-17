@@ -873,6 +873,22 @@
           {
             "name": "entity",
             "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
           }
         ]
       },
@@ -1342,10 +1358,130 @@
         ]
       },
       "path": "~/mouse"
+    },
+    {
+      "name": "StartShitProgressCounter",
+      "type": "procedure",
+      "sortid": 111,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "start_shit_progress_counter",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/mouse"
+    },
+    {
+      "name": "ShitProgressUpdate",
+      "type": "procedure",
+      "sortid": 111,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "shit_progress_update",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/mouse"
+    },
+    {
+      "name": "PlayerStartShitProgressCounter",
+      "type": "procedure",
+      "sortid": 112,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "player_start_shit_progress_counter",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/mouse"
+    },
+    {
+      "name": "PlayerShitProgressUpdate",
+      "type": "procedure",
+      "sortid": 113,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "player_shit_progress_update",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/mouse"
+    },
+    {
+      "name": "LaxativeAction",
+      "type": "procedure",
+      "sortid": 114,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "laxative_action",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/mouse"
     }
   ],
   "variable_elements": [],
-  "sound_elements": [],
+  "sound_elements": [
+    {
+      "name": "shit",
+      "files": [
+        "shit1",
+        "shit2",
+        "shit3",
+        "shit4",
+        "shit5",
+        "shit6"
+      ],
+      "category": "neutral",
+      "subtitle": "Shitty shit shits"
+    }
+  ],
   "language_map": {
     "en_us": {
       "block.ass.diarrhea": "Diarrhea",
@@ -1360,6 +1496,7 @@
       "block.ass.turd": "Turd",
       "block.ass.coarse_turd": "Coarse Turd",
       "block.ass.dither": "Dither",
+      "subtitles.shit": "Shitty shit shits",
       "fluid.ass.diarrhea": "Diarrhea",
       "block.ass.smooth_poop": "Smooth Poop",
       "item.ass.dung": "Dung",

@@ -1,1 +1,32 @@
-{}
+{
+  "shit": {
+    "category": "neutral",
+    "subtitle": "subtitles.shit",
+    "sounds": [
+      {
+        "name": "ass:shit1",
+        "stream": false
+      },
+      {
+        "name": "ass:shit2",
+        "stream": false
+      },
+      {
+        "name": "ass:shit3",
+        "stream": false
+      },
+      {
+        "name": "ass:shit4",
+        "stream": false
+      },
+      {
+        "name": "ass:shit5",
+        "stream": false
+      },
+      {
+        "name": "ass:shit6",
+        "stream": false
+      }
+    ]
+  }
+}

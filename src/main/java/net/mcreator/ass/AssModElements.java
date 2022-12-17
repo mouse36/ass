@@ -45,6 +45,7 @@ public class AssModElements {
 	public final List<Supplier<Enchantment>> enchantments = new ArrayList<>();
 	public static Map<ResourceLocation, net.minecraft.util.SoundEvent> sounds = new HashMap<>();
 	public AssModElements() {
+		sounds.put(new ResourceLocation("ass", "shit"), new net.minecraft.util.SoundEvent(new ResourceLocation("ass", "shit")));
 		try {
 			ModFileScanData modFileInfo = ModList.get().getModFileById("ass").getFile().getScanResult();
 			Set<ModFileScanData.AnnotationData> annotations = modFileInfo.getAnnotations();

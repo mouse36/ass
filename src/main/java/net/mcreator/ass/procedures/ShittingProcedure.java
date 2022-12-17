@@ -1,5 +1,6 @@
 package net.mcreator.ass.procedures;
 
+import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.event.entity.living.LivingEvent;
@@ -8,6 +9,8 @@ import net.minecraft.world.server.ServerWorld;
 import net.minecraft.world.World;
 import net.minecraft.world.IWorld;
 import net.minecraft.world.Explosion;
+import net.minecraft.util.math.BlockPos;
+import net.minecraft.util.SoundCategory;
 import net.minecraft.util.ResourceLocation;
 import net.minecraft.tags.EntityTypeTags;
 import net.minecraft.particles.ParticleTypes;
@@ -20,7 +23,6 @@ import net.minecraft.entity.Entity;
 import net.mcreator.ass.item.ShartShardItem;
 import net.mcreator.ass.block.TurdBlock;
 import net.mcreator.ass.block.SmoothTurdBlock;
-import net.mcreator.ass.block.CoarseTurdBlock;
 import net.mcreator.ass.AssMod;
 
 import java.util.Map;
@@ -79,46 +81,45 @@ public class ShittingProcedure {
 		IWorld world = (IWorld) dependencies.get("world");
 		if (((entity instanceof AnimalEntity) && (!(EntityTypeTags.getCollection()
 				.getTagByID(new ResourceLocation(("ass:doesnt_produce_turds").toLowerCase(java.util.Locale.ENGLISH))).contains(entity.getType()))))) {
-			if ((Math.random() <= 0.6)) {
+			if (((entity.getPersistentData().getDouble("shit_progress")) >= 400)) {
 				if (world instanceof ServerWorld) {
 					((ServerWorld) world).spawnParticle(ParticleTypes.SMOKE, (x + 0.5), (y + 0.5), (z + 0.5), (int) 6, 1, 1, 1, 1);
 				}
-				if ((Math.random() <= 0.06)) {
+				if (world instanceof World && !world.isRemote()) {
+					((World) world).playSound(null, new BlockPos((int) x, (int) y, (int) z),
+							(net.minecraft.util.SoundEvent) ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("ass:shit")),
+							SoundCategory.NEUTRAL, (float) 1, (float) 1);
+				} else {
+					((World) world).playSound(x, y, z,
+							(net.minecraft.util.SoundEvent) ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("ass:shit")),
+							SoundCategory.NEUTRAL, (float) 1, (float) 1, false);
+				}
+				if (((entity.getPersistentData().getDouble("shit_progress")) >= 600)) {
 					if (world instanceof World && !world.isRemote()) {
-						ItemEntity entityToSpawn = new ItemEntity((World) world, (x + 0.5), (y + 0.5), (z + 0.5),
-								new ItemStack(ShartShardItem.block));
+						ItemEntity entityToSpawn = new ItemEntity((World) world, (x + 0.5), (y + 0.5), (z + 0.5), new ItemStack(TurdBlock.block));
 						entityToSpawn.setPickupDelay((int) 10);
 						world.addEntity(entityToSpawn);
 					}
-					if (world instanceof World && !((World) world).isRemote) {
-						((World) world).createExplosion(null, (int) x, (int) y, (int) z, (float) 4, Explosion.Mode.BREAK);
-					}
 				} else {
-					if ((Math.random() <= 0.2)) {
+					if ((Math.random() <= 0.6)) {
 						if (world instanceof World && !world.isRemote()) {
 							ItemEntity entityToSpawn = new ItemEntity((World) world, (x + 0.5), (y + 0.5), (z + 0.5),
-									new ItemStack(CoarseTurdBlock.block));
+									new ItemStack(ShartShardItem.block));
 							entityToSpawn.setPickupDelay((int) 10);
 							world.addEntity(entityToSpawn);
 						}
+						if (world instanceof World && !((World) world).isRemote) {
+							((World) world).createExplosion(null, (int) x, (int) y, (int) z, (float) 4, Explosion.Mode.BREAK);
+						}
 					} else {
-						if ((Math.random() <= 0.3)) {
-							if (world instanceof World && !world.isRemote()) {
-								ItemEntity entityToSpawn = new ItemEntity((World) world, (x + 0.5), (y + 0.5), (z + 0.5),
-										new ItemStack(SmoothTurdBlock.block));
-								entityToSpawn.setPickupDelay((int) 10);
-								world.addEntity(entityToSpawn);
-							}
-							if (world instanceof ServerWorld) {
-								((ServerWorld) world).spawnParticle(ParticleTypes.SPLASH, (x + 0.5), (y + 0.5), (z + 0.5), (int) 6, 1, 1, 1, 1);
-							}
-						} else {
-							if (world instanceof World && !world.isRemote()) {
-								ItemEntity entityToSpawn = new ItemEntity((World) world, (x + 0.5), (y + 0.5), (z + 0.5),
-										new ItemStack(TurdBlock.block));
-								entityToSpawn.setPickupDelay((int) 10);
-								world.addEntity(entityToSpawn);
-							}
+						if (world instanceof World && !world.isRemote()) {
+							ItemEntity entityToSpawn = new ItemEntity((World) world, (x + 0.5), (y + 0.5), (z + 0.5),
+									new ItemStack(SmoothTurdBlock.block));
+							entityToSpawn.setPickupDelay((int) 10);
+							world.addEntity(entityToSpawn);
+						}
+						if (world instanceof ServerWorld) {
+							((ServerWorld) world).spawnParticle(ParticleTypes.SPLASH, (x + 0.5), (y + 0.5), (z + 0.5), (int) 6, 1, 1, 1, 1);
 						}
 					}
 				}
